@@ -3,42 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>DZ_Module_3_Week_3_zd_2</title>
   <style>
-    img{
-      max-width: 40px;
+    /* body {
+      padding: 0;
+      margin: 0;
+    } */
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
-    div{
-      display: flexbox;
-
+    nav {
+      width: 200px;
       background-color: gray;
-      padding: 10px;
-      max-width: 80px;
-      
+      /* height: 100vh;
+      transition: 1s; */
     }
-    span{
-      padding: 3px;
+
+    /* nav:hover {
+      width: 200px;
+      transition: 1s;
+    } */
+    li:hover {
+      background-color: rgb(77, 77, 77);
     }
-    .span:hover{
-  color: beige;
+    a {
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+    }
+    li {
+      padding: 20px 20px 20px 60px;
+    }
+    .edit {
+      background: url(dz3/edit.png) 0px -5px/ 64px 64px no-repeat;
+    }
+    .fav {
+      background: url(dz3/favorites.png) 0px -5px/ 64px 64px no-repeat;
+    }
+    .history {
+      background: url(dz3/history.png) 0px -5px/ 64px 64px no-repeat;
+    }
+    .seq {
+      background: url(dz3/security.png) 0px -5px/ 64px 64px no-repeat;
+    }
+    .settings {
+      background: url(dz3/settings.png) 0px -5px/ 64px 64px no-repeat;
     }
   </style>
 </head>
-<body>  
-  <div>
-
-<span>    <img src="icons_security/edit.png" alt="">EDIT</span>
-<br>
-<span>FAVORITES</span>
-<br>
-<span>HISTORY</span>
-<br>
-<span>SECURITY</span>
-<br>
-<span>SETTINGS</span>
-
-
-  </div>
+<body>
+  <nav>
+    <ul>
+      <li class="edit"><a href="#">Edit</a></li>
+      <li class="fav"><a href="#">FAVORITES</a></li>
+      <li class="history"><a href="#">HISTORY</a></li>
+      <li class="seq"><a href="#">SECURITY</a></li>
+      <li class="settings"><a href="#">SETTINGS</a></li>
+    </ul>
+  </nav>
   
+
 </body>
 </html>
