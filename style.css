@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
   font-family: Arial, sans-serif;
+background-color:#fefffe;
+background-image: url(1920x1152_0xac120003_12726234471666876992.jpeg);
 }
 
 header {
-  background-color: #333;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #04101ca9;
   color: #fff;
   padding: 20px;
 }
