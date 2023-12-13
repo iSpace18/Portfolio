@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .watch {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 3px #008b8b solid;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .watch div {
+    position: absolute;
+  }
+
+  .center {
+    width: 5px;
+    height: 5px;
+    top: calc(50% - (5px/2));
+    left: calc(50% - (5px/2));
+    background-color: aqua;
+  }
+  .second{
+    height: 80px;
+    width: 3px;
+    background-color: brown;
+    left: calc(50% - (3px/2));
+    top: 20px;
+    animation: time 6s steps(60) infinite;
+    transform-origin: bottom center;
+  }
+  .minuts{
+    height: 60px;
+    width: 3px;
+    background-color: rgb(42, 165, 114);
+    left: calc(50% - (3px/2));
+    top: 40px;
+    animation: time 360s linear infinite;
+    transform-origin: bottom center;
+  }
+  .hours{
+    height: 40px;
+    width: 3px;
+    background-color: rgb(42, 110, 165);
+    left: calc(50% - (3px/2));
+    top: 60px;
+    animation: time 8640s linear infinite;
+    transform-origin: bottom center;
+  }
+  /* .twelv{
+    top: 10px;
+    left: 100px;
+    transform: translateX(-50%);
+  }
+  .three{
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .six{
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nine{
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .one{
+    transform: rotate(30deg);
+    transform-origin: 0px 90px;
+  }
+  .two{
+    transform: rotate(55deg);
+    transform-origin: 0px 90px;
+  }
+  .four{
+    transform: rotate(120deg);
+    transform-origin: 0px 90px;
+  }
+   */
+   
+
+  @keyframes time{
+    from{
+transform: rotate(0);
+    }
+    to{
+transform: rotate(360deg);
+    }
+  }
+</style>
+
+<body>
+  <div class="watch">
+    <div class="second"></div>
+    <div class="minuts"></div>
+    <div class="hours"></div>
+    <div class="center"></div>
+    <!-- <div class="twelv">12</div>
+    <div class="nine">9</div>
+    <div class="six">6</div>
+    <div class="three">3</div>
+    <div class=" twelv one">1</div>
+    <div class="twelv two">2</div>
+    <div class="twelv four">4</div>
+  </div> -->
+</body>
+
+</html>

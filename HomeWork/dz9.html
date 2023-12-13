@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html{
+      background-color: rgb(207, 207, 207);
+    }
+  .layout {
+    text-transform: uppercase;
+    margin: 50px auto;
+    max-width: 800px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .layout header {
+    background-color: #923158;
+    padding: 20px 40px;
+  } 
+  .layout nav, .layout footer {
+    background-color: #6e1237;
+    padding: 10px 40px;
+    margin: 10px 0;
+  }
+  .layout aside, .layout main {
+    background-color: #b65b80;
+    padding: 20px 40px;
+  }
+  .layout .flex div aside {
+    margin-bottom: 10px;
+  }
+  .layout section {
+    background-color: #db92af;
+    padding: 5px 40px 60px;
+    margin: 10px 0;
+  }
+  .layout main {
+    width: 600px;
+  }
+  .layout .flex {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start
+  }
+  .layout .vertical{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+</style>
+</head>
+<body>
+  <div class="layout">
+    <header>header</header>
+    <nav>menu</nav>
+    <div class="flex">
+      <div>
+        <aside>aside1</aside>
+        <aside>aside2</aside>
+      </div>
+      <main>
+        main content
+        <section>section 1</section>
+        <section>section 2</section>
+      </main>
+      <aside class="vertical">aside3</aside>
+    </div>
+    <footer>footer</footer>
+  </div>
+
+  <div class="box square"></div>
+  <div class="box circle"></div>
+</body>
+</html>
