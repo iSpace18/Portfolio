@@ -6,10 +6,13 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-image: url(1920x1152_0xac120003_12726234471666876992.jpeg);
+  background-image: no-repeat;
+background-size: cover;
 }
 
 header {
-  background-color: #333;
+  background-color: #04101ca9;
   color: #fff;
   padding: 20px;
 }
@@ -17,14 +20,6 @@ header {
 section {
   padding: 50px;
 }
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
 .work-links {
   list-style: none;
   display: flex;
@@ -36,16 +31,19 @@ footer {
 }
 
 .work-links li a {
-  color: #333;
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
   text-decoration: none;
   padding: 10px 20px;
-  border: 1px solid #333;
   border-radius: 5px;
+  transition: all 0.7s ease;
 }
 
 .work-links li a:hover {
-  background-color: #333;
-  color: #fff;
+  border: 1px solid white;
+  color: black;
+  background-color: white;
 }
 h1{
   text-align: center;
