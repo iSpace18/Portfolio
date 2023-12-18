@@ -8,8 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background-image: url(1920x1152_0xac120003_12726234471666876992.jpeg);
   background-image: no-repeat;
-background-size: cover;
-
+  background-size: cover;
 }
 
 header {
@@ -36,8 +35,7 @@ section {
   color: #fff;
   border: 1px solid black;
   text-decoration: none;
-  padding: 15px;
-  
+  padding: 10px 20px;
   border-radius: 5px;
   transition: all 0.7s ease;
 }
