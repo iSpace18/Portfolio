@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnterInOchko</title>
+  <style>
+
+    .left {
+      background: url(icons/1644800944_5-abrakadabra-fun-p-krasnie-shtori-fon-5.jpeg) no-repeat;
+      height: 100%;
+      width: 50%;
+      margin: 0px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transform-origin: 0% 50%;
+      transition: 1s;
+      text-align: center;
+      
+    }
+    
+    .right {
+      background: url(icons/1644800944_5-abrakadabra-fun-p-krasnie-shtori-fon-5.jpeg) no-repeat;
+    
+      height: 100%;
+      width: 50%;
+      margin: 0px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      transform-origin: 100% 50%;
+      transition: 1s;
+      text-align: center;
+    }
+
+    .myw {
+      display: flex;
+      background: url(icons/1694416670162565263\ \(1\).jpg) 50% center/cover  no-repeat;
+      width: 800px;
+      height: 600px;
+      position: relative;
+      perspective: 1000px;
+      /* top: 0px; */
+      left: 0px;
+      margin-left: 30%;
+      margin-top: 10%;
+      overflow: hidden;
+    }
+
+    .myw:hover .right {
+      transform: rotateY(-60deg);
+      transition: 1s;
+    } 
+
+    .myw:hover .left {
+      transform: rotateY(60deg);
+      transition: 1s;
+    }
+
+    a {
+            text-decoration: none;
+            color: brown;
+
+     }
+     body{
+      background-image: url(icons/1702333390_kalix-club-p-chernaya-kirpichnaya-stena-fon-pinterest-2.jpg);
+      background-size: cover;
+       background-image: no-repeat;
+     }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div class="myw">
+
+    <div class="left"></div>
+    <div class="right"></div>
+    
+  </div>
+</body>
+
+</html>
