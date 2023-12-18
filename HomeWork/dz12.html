@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexanutoct'</title>
+  <style>
+    .flexanutoct {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flexa {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .nutoct {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .none {
+      width: 218px;
+      height: 164px;
+    }
+
+    .chosluch {
+      width: 218px;
+      height: 164px;
+      background-color: rgb(74 18 111);
+      text-align: center;
+      align-content: center;
+    }
+
+    .chosluch:hover {
+      background-color: rgb(49, 11, 74);
+      transition: 0.8s ease;
+    }
+    body{
+      background-color: rgb(214, 214, 214);
+    }
+    span{
+      color: white;
+      position: absolute;
+      margin-top: 71px;
+      margin-left: -40px;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="flexanutoct">
+
+    <div class="flexa">
+
+      <div class="chosluch"><span>чо случилось</span></div>
+      <div class="none"><img src="icons/Без названия.jpeg" alt="123"></div>
+      <div class="chosluch"><span>чо случилось</span></div>
+
+    </div>
+
+    <div class="nutoct">
+
+      <div class="none"><img src="icons/Без названия.jpeg" alt="123"></div>
+      <div class="chosluch"><span>чо случилось</span></div>
+      <div class="none"><img src="icons/Без названия.jpeg" alt="123"></div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
