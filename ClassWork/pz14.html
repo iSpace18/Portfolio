@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Меню</title> 
+  <style> 
+    body{ 
+max-width: 700px;
+
+    } 
+    /* Стили для меню */ 
+    ul.menu { 
+      list-style-type: none; 
+      margin: 0; 
+      padding: 0; 
+      overflow: hidden; 
+      background-color: #000000; 
+      box-shadow: 3px gray;
+      text-align: center;
+      margin-top: -9px;
+
+    } 
+    ul.menu li { 
+      float: left; 
+    } 
+    ul.menu li a { 
+      display: block; 
+      color: rgb(255, 5, 130); 
+      text-align: center; 
+      padding: 14px 16px; 
+      text-decoration: none; 
+    } 
+    
+    ul.menu li a:hover { 
+      background-color: #111; 
+      
+    } 
+    ul.menu li a:active{ 
+      background-color: #111 
+    } 
+    
+    /* Стили для подменю */ 
+    ul.submenu { 
+      display: none; 
+      position: absolute; 
+      background-color: #171717; 
+      text-align: center;
+    } 
+    ul.submenu li { 
+      float: none; 
+      display: block; 
+    } 
+    ul.submenu li a { 
+      padding: 10px; 
+    } 
+    /* Стили для вложенного подменю */ 
+    ul.submenu ul.submenu { 
+      top: 0; 
+      left: 80%; 
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: rgb(32, 32, 32);
+      margin-top: 35px;
+      margin-left: 23px;
+    } 
+    /* Показывать подменю при наведении на пункт меню */ 
+    ul.menu li:hover>ul.submenu { 
+      display: block; 
+
+    } 
+    div.position{
+      text-align: center;
+      background-color: whitesmoke;
+      
+    }
+
+  </style> 
+</head> 
+<body> 
+  <div class="position">
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Categories</a>
+        <ul class="submenu">
+            <li><a href="#">Man</a></li>
+            <li><a href="#">Woomen</a>
+                <ul class="submenu">
+                    <li><a href="#">Dress</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Kids</a></li>
+        </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+  <div> 
+    <h1>Lorem ipsum</h1> 
+    <p class="text"> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce diam nibh, finibus non placerat sed, rutrum iaculis mi. Curabitur semper ullamcorper purus. Donec risus urna, venenatis sed lacus sed, lacinia gravida lectus. Maecenas posuere porta dolor et iaculis. Fusce tempus finibus porta. Duis non sagittis ligula, eu rutrum odio. Aenean sed dolor non diam accumsan aliquam. Donec auctor, magna ut cursus molestie, dui arcu sagittis nibh, ornare varius lectus velit et est.</p>
+      <p class="text"> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce diam nibh, finibus non placerat sed, rutrum iaculis mi. Curabitur semper ullamcorper purus. Donec risus urna, venenatis sed lacus sed, lacinia gravida lectus. Maecenas posuere porta dolor et iaculis. Fusce tempus finibus porta. Duis non sagittis ligula, eu rutrum odio. Aenean sed dolor non diam accumsan aliquam. Donec auctor, magna ut cursus molestie, dui arcu sagittis nibh, ornare varius lectus velit et est.</p> 
+        <p class="text"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce diam nibh, finibus non placerat sed, rutrum iaculis mi. Curabitur semper ullamcorper purus. Donec risus urna, venenatis sed lacus sed, lacinia gravida lectus. Maecenas posuere porta dolor et iaculis. Fusce tempus finibus porta. Duis non sagittis ligula, eu rutrum odio. Aenean sed dolor non diam accumsan aliquam. Donec auctor, magna ut cursus molestie, dui arcu sagittis nibh, ornare varius lectus velit et est.</p> 
+          <p class="text"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce diam nibh, finibus non placerat sed, rutrum iaculis mi. Curabitur semper ullamcorper purus. Donec risus urna, venenatis sed lacus sed, lacinia gravida lectus. Maecenas posuere porta dolor et iaculis. Fusce tempus finibus porta. Duis non sagittis ligula, eu rutrum odio. Aenean sed dolor non diam accumsan aliquam. Donec auctor, magna ut cursus molestie, dui arcu sagittis nibh, ornare varius lectus velit et est.</p>  
+  </div> 
+</div>
+</body> 
+</html>
+
+
+
+
+
