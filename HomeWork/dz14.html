@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Боковое раскрывающееся меню</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      max-width: 1000px;
+      margin-left: 30px;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100px;
+      background-color: #767676;
+      transition: width 1s;
+
+      
+    }
+
+    .sidebar:hover {
+      width: 200px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar li {
+      padding: 10px;
+      color: white;
+      transition: background-color 0.5s;
+    }
+
+    .sidebar li:hover {
+      background-color: #555;
+    }
+
+    .content {
+      margin-left: 60px;
+      padding: 20px;
+    }
+    img{
+      max-width: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <ul>
+      <li style="text-align: center;">Menu</li>
+      <li style="text-align: center;"><img src="icons_security/edit.png"></li>
+      <li style="text-align: center;"><img src="icons_security/favorites.png"></li>
+      <li style="text-align: center;"><img src="icons_security/history.png"></li>
+      <li style="text-align: center;"><img src="icons_security/security.png"></li>
+      <li style="text-align: center;"><img src="icons_security/settings.png"></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h1>Содержимое страницы</h1>
+    <p>
+    <h1><b>Lorem ipsum</b></h1> dolor sit amet, consectetur adipiscing elit. Praesent non viverra enim. Sed pharetra
+    quis justo et feugiat. Suspendisse non sapien ipsum. Nunc eget arcu purus. Morbi gravida, lectus nec laoreet
+    ultrices, nisl arcu gravida tortor, nec dictum nibh ante a lacus. Proin ante odio, faucibus quis tempor ac, feugiat
+    nec elit. Nulla tincidunt leo magna, sit amet ornare ex euismod vel. Fusce venenatis egestas erat in feugiat.
+    Vivamus erat elit, suscipit vel massa sed, imperdiet auctor neque. Interdum et malesuada fames ac ante ipsum primis
+    in faucibus. Donec condimentum ligula nisi, et fringilla libero efficitur eget. Fusce efficitur lacus blandit enim
+    euismod, non aliquet est tincidunt. Nam sapien metus, cursus suscipit posuere at, feugiat at velit. Aliquam erat
+    volutpat. Praesent eleifend, nulla vel molestie dignissim, nisl ipsum suscipit justo, non blandit ipsum justo eget
+    purus. Mauris ac finibus nisl, id feugiat lacus. Nam placerat lorem et nulla commodo consectetur. Nullam gravida vel
+    odio sit amet egestas. Proin volutpat nec lectus sed hendrerit. Ut aliquet velit ex, vel volutpat elit ornare vel.
+    Maecenas laoreet dui at lectus gravida, at pellentesque purus accumsan. Sed consequat augue magna, vel mattis metus
+    fermentum pulvinar. Morbi tincidunt, neque in malesuada pharetra, magna arcu sodales sapien, vitae efficitur augue
+    nisi eu urna.</p>
+
+    <p> <h1>Morbi lorem nulla</h1> commodo ac purus vitae, tincidunt sodales massa. Donec rhoncus lorem ac lorem luctus mollis
+      et in felis. Integer venenatis diam in dolor elementum, ac facilisis sem condimentum. Sed pharetra erat at
+      suscipit dapibus. Nulla facilisi. Cras auctor ornare neque, vel egestas mi condimentum eu. Etiam turpis ante,
+      fringilla sit amet nibh eu, convallis semper quam. Vivamus hendrerit nulla ut est convallis vestibulum. Mauris sed
+      ante sed nisl tristique sodales eget et purus.</p>
+
+    <p> <h1>Curabitur vestibulum</h1> augue sit amet volutpat maximus, leo enim convallis diam, vitae elementum nunc turpis at
+      ipsum. Ut ligula ipsum, consectetur vitae est quis, finibus condimentum risus. Etiam feugiat blandit justo, eu
+      congue elit condimentum et. Fusce tellus metus, scelerisque sit amet mattis a, porta ut sapien. Nunc dictum erat
+      tortor, at malesuada leo consectetur egestas. Praesent vitae auctor magna. Suspendisse porta rutrum arcu, ut
+      efficitur augue malesuada iaculis. Nam maximus interdum nunc et dictum. Nulla facilisi. Suspendisse potenti. Nunc
+      tempus, ligula a volutpat gravida, libero massa consectetur felis, quis tempor ipsum orci ut magna. Ut gravida nec
+      metus posuere scelerisque. Suspendisse sapien ligula, ullamcorper viverra ipsum ac, aliquet suscipit augue. Donec
+      ornare pellentesque nibh, non gravida libero. Donec quis laoreet metus, et pulvinar ligula. Etiam varius eu odio
+      sed volutpat.</p>
+
+    <p> <h1>Interdum et malesuada </h1>fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent
+      per conubia nostra, per inceptos himenaeos. Sed facilisis tempus est, vel maximus nulla laoreet non. Aenean vitae
+      scelerisque nunc. Integer mattis molestie velit sit amet posuere. Aenean id purus cursus, egestas est a, tempor
+      turpis. Nunc pellentesque, ligula nec dapibus volutpat, arcu mauris pulvinar eros, vel varius diam urna vitae est.
+      Quisque interdum accumsan congue. Quisque tempor, justo sit amet cursus pulvinar, augue quam consequat nunc, eu
+      pellentesque lorem augue eu tortor. Nam non pretium justo. Quisque laoreet iaculis tortor.</p>
+  </div>
+</body>
+
+</html>
