@@ -4,60 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>dvishenie</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 200px;
+    }
+
+    .line {
+      width: 400px;
+      height: 50px;
+      border: 2px solid rgb(83, 20, 255);
+      position: relative;
+    }
+
+    .in {
+      height: 50px;
+      width: 50px;
+      background-color: rgb(83, 20, 255);
+      animation: dvishenie 5s ease-in-out alternate infinite;
+      position: absolute;
+    }
+
+    @keyframes dvishenie {
+      from {
+        left: 0px;
+      }
+
+      to {
+        left: 350px;
+      }
+    }
+  </style>
 </head>
-<style>
-  body {
-    margin: 0;
-  }
-  .flex{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .divv {
-    width: 520px;
-    height: 70px;
-    border: 4px solid #ff8c00;
-    position: relative;
-  }
-
-  .box {
-    height: 70px;
-    width: 70px;
-    background-color: #ff8c00;
-    animation: dvishenie 3s linear alternate infinite ; 
-    position: absolute;
-  }
-  /* .box1 {
-    height: 50px;
-    width: 50px;
-    background-color: orangered;
-    animation: dvishenie 3s linear alternate-reverse infinite ; 
-    position: absolute;
-  } */
-
-
-  @keyframes dvishenie {
-    from {
-      left: 0px;
-    }
-
-    to {
-      left: 450px;
-    }
-  }
-</style>
-
 
 <body>
- <div class="flex">
-  <div class="divv">
- <div class="box"> </div>
-  <div class="box1"> </div>
+  <div class="container">
+
+    <div class="line">
+      <div class="in"></div>
+    </div>
+
   </div>
-</div>
 </body>
 
 </html>
