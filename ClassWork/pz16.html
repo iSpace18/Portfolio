@@ -2,136 +2,193 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cобытие</title>
-  <style>
-    body {
-      background-color: #014242;
-    }
-    @media screen and (max-width: 600px) {
-      .container {
-        padding: 10px;
-      }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>body {
+  background-color: #014242;
+}
 
-      .block {
-        margin-bottom: 10px;
-        font-size: 16px;
-      }
-    }
+a {
+  color: grey;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
 
+h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+}
 
-    @media screen and (min-width: 601px) and (max-width: 1024px) {
-      .container {
-        padding: 20px;
-      }
+h4 {
+  font-size: 18px;
+  color: grey;
+  font-weight: 400;
+}
 
-      .block {
-        margin-bottom: 20px;
-        font-size: 18px;
-      }
-    }
+p {
+  font-size: 19px;
+  color: white;
+  font-weight: 500;
+}
 
-    @media screen and (min-width: 1025px) {
-      .container {
-        padding: 30px;
-      }
-    }
+img {
+  width: 100px;
+  height: 100px;
+}
 
-    h2 {
-      color: rgba(255, 255, 255, 0.466);
-      margin: 120px;
-    }
+.container {
+  max-width: 1200px;
+  margin-left: 50px;
+}
 
-    div.margin_p {
-      font-size: 70px;
-      margin-left: 120px;
-      color: white;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+.big_h1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
 
-    p.footer {
-      color: rgba(255, 255, 255, 0.644);
-      margin-top: 120px;
-      margin-left: 255px;
-    }
+.flex_inf {
+  display: flex;
+  gap: 20px;
+}
 
-    p.geoff {
-      color: white;
-      margin-top: 10px;
-      margin-left: 255px;
+.pers_inf {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
-    }
+.inf {
+  display: flex;
+  gap: 25px;
+}
+.link_dz{
+  margin-top: 70px;
+  font-size: 25px;
+  display: block;
+}
 
-    div.names {
-      display: inline;
-    }
+/* MEDIA-ADAPTIVE */
 
-    p.Comments {
-      margin-top: -68px;
-      margin-left: 395px;
-      color: rgba(255, 255, 255, 0.644);
-    }
+@media (min-width: 500px) and (max-width: 777px) {
+  .flex_inf {
+      flex-direction: column;
+      gap: 0px;
+  }
 
-    p.go {
-      margin-left: 395px;
-      color: white;
-    }
+  h1 {
+      font-size: 32px;
+  }
 
-    p.Published {
-      margin-left: 550px;
-      margin-top: -68px;
-      color: rgba(255, 255, 255, 0.644);
-    }
+  img {
+      width: 80px;
+      height: 80px;
+  }
 
-    p.data {
-      margin-left: 550px;
-      color: white;
-    }
+  h4 {
+      font-size: 16px;
+      font-weight: 300;
+  }
 
-    p.Updated {
-      margin-left: 700px;
-      margin-top: -68px;
-      color: rgba(255, 255, 255, 0.644);
-    }
+  p {
+      font-size: 16px;
+      font-weight: 300;
+  }
+}
 
-    p.updata {
-      margin-left: 700px;
-      color: white;
-    }
+@media (min-width: 280px) and (max-width: 500px) {
+  .flex_inf {
+      flex-direction: column;
+      gap: 0px;
+  }
 
-    img.profile {
-      scale: 0.3;
-    }
+  .pers_inf {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+      gap: 20px;
+  }
 
-    div.margin_img {
-      position: absolute;
-      margin-top: -100px;
-      margin-left: 50px;
-    }
-  </style>
+  h1 {
+      font-size: 28px;
+  }
+
+  img {
+      width: 80px;
+      height: 80px;
+  }
+
+  h4 {
+      font-size: 16px;
+      font-weight: 300;
+  }
+
+  p {
+      font-size: 16px;
+      font-weight: 300;
+  }
+}</style>
+    <title>Document</title>
 </head>
 
 <body>
-  <div class="container">
-    <h2>Home/Articles/</h2>
-    <div class="margin_p">
-      <span>The Difference Between</span><br> <span>Responsive and </span><br><span>Adaptive Design</span>
-    </div>
-    <div class="margin_img"><img class="profile" src="icon/account.png"></div>
-    <div class="names">
-      <p class="footer">Author</p>
-      <p class="geoff">Geoff Graham</p>
+    <section>
+        <div class="container">
+            <div class="big_h1">
+                <div class="links">
+                <a href="#">Home /</a>
+                <a href="#">Articles /</a>
+            </div>
+                <h1>
+                    The Difference Between <br>
+                    Responsive and <br>
+                    Adaptive Design
+                </h1>
+            </div>
+            <div class="pers_inf">
+                <img src="icon/account.png" alt="Profile picture">
+                <div class="flex_inf">
+                   
+                    <div class="inf">
+                        <div class="sec">
+                        <h4 class="name">
+                            Author
+                        </h4>
 
-      <p class="Comments">49 Comments</p>
-      <p class="go">Go to comments </p>
+                        <p>Geoff Graham</p>
+                    </div>
+                    
+                        <div class="sec">
+                        <h4>
+                            49 Comments
+                        </h4>
 
-      <p class="Published">Published</p>
-      <p class="data">Nov 11, 2018</p>
+                        <p>Go to comments</p>
+                    </div>
+                </div>
+                <div class="inf">
+                    <div class="sec">
+                    <h4 class="name">
+                        Published
+                    </h4>
 
-      <p class="Updated">Updated</p>
-      <p class="updata">Nov 17, 2018</p>
-    </div>
+                    <p>11 Nov, 2018</p>
+                </div>
+                
+                    <div class="sec">
+                    <h4>
+                        Updated
+                    </h4>
+
+                    <p>Nov 17, 2018</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
