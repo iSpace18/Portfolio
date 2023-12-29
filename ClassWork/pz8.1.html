@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Имитация загрузки видео</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .image {
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+    .info {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .progress-bar {
+      width: 500%;
+      height: 40px;
+      background-color: #f1f1f1;
+      overflow: hidden;
+      position: relative;
+      left: -70%;
+    }
+
+    .progress {
+      height: 100%;
+      background-color: #6e86ff83;
+      width: 40%;
+
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      color: #000000;
+      font-weight: bold;
+      line-height: 40px;
+    }
+    .progress-text2 {
+      position: absolute;
+      top: 50%;
+      right: -10%;
+      transform: translate(-50%, -50%);
+      color: #000000;
+      font-weight: bold;
+      line-height: 100px;
+    }
+
+    .time-remaining {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    /* Разная компоновка блоков для маленькой ширины экрана */
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+    }
+
+    /* Разная компоновка блоков для средней ширины экрана */
+    @media (min-width: 601px) and (max-width: 900px) {
+      .container {
+        width: 70%;
+      }
+    }
+
+    /* Разная компоновка блоков для большой ширины экрана */
+    @media (min-width: 901px) {
+      .container {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="icon/loading.png" alt="Video Thumbnail" width="200">
+    </div>
+    <div class="info">
+      <p>Загрузка видео...</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 40%;"></div>
+        <div class="progress-text">Uploading 40% </div>
+        <div class="progress-text2"> About 23 minutes remaining</div>
+      </div>
+    </div>
+    <button class="button">Done</button>
+  </div>
+</body>
+</html>
