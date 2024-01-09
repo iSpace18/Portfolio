@@ -78,6 +78,26 @@ input:valid ~ label {
   top: 20px;
 }
 
+/* #pass:focus ~ ion-icon {
+  opacity: 0;
+  transition: .5s;
+}
+
+.pass:hover #pass:valid ion-icon {
+  opacity: 0;
+  transition: .5s;
+} */
+
+#pass::-ms-reveal {
+  margin-right: 50px;
+}
+#pass::-ms-reveal  {
+  stroke: white;
+  fill: white;
+  color: #fff;
+  
+}
+
 .forget {
   display: flex;
   justify-content: space-between;

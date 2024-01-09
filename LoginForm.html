@@ -15,13 +15,13 @@
           <h2>Login</h2>
           <div class="inputbox">
             <ion-icon name="mail-outline"></ion-icon>
-            <input type="email" required />
-            <label for="">Email</label>
+            <input type="text" id="email" minlength="1" required />
+            <label for="email">Email</label>
           </div>
-          <div class="inputbox">
+          <div class="inputbox pass">
+            <input type="password" id="pass" minlength="1" required />
+            <label for="pass">Password</label>
             <ion-icon name="lock-closed-outline"></ion-icon>
-            <input type="password" required />
-            <label for="">Password</label>
           </div>
           <div class="forget">
             <label> <input type="checkbox" /> Remember me </label>
