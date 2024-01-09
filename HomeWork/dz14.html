@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NavMenu</title>
 
   <style>
-
     a {
-            text-decoration: none;
-            color: brown;
+      text-decoration: none;
+      color: brown;
 
-        }
+    }
 
     button {
-            margin: 15px;
-        }
+      margin: 15px;
+    }
 
     ol {
       list-style-type: none;
     }
 
-    
+
     .e {
       text-transform: uppercase;
       color: antiquewhite;
@@ -29,7 +29,7 @@
       top: 40px;
       left: 75px;
     }
-    
+
     .f {
       text-transform: uppercase;
       color: antiquewhite;
@@ -53,7 +53,7 @@
       left: 75px;
       top: 230px;
     }
-    
+
     .set {
       text-transform: uppercase;
       color: antiquewhite;
@@ -61,7 +61,7 @@
       left: 75px;
       top: 294px;
     }
-    
+
     .mainmenu {
       height: 100%;
       width: 62px;
@@ -76,46 +76,51 @@
       font-weight: lighter;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    
+
     .mainmenu img {
       height: 60px;
     }
-    
+
     #p1 {
       top: 42px;
-      
+
     }
 
     #p2 {
       top: 89px;
-      
+
     }
 
     #p3 {
       top: 144px;
-     
+
     }
-    
+
     #p4 {
       top: 200px;
-      
+
     }
-    
+
     #p5 {
       top: 254px;
-      
+
     }
-    
-    .mainmenu .e, .f, .h, .sec, .set {
+
+    .mainmenu .e,
+    .f,
+    .h,
+    .sec,
+    .set {
       opacity: 0;
       transition: 1s;
     }
+
     .mainmenu:hover li {
       opacity: 1;
       transition: 1s;
     }
 
-    .mainmenu:hover  {
+    .mainmenu:hover {
       width: 200px;
       opacity: 1;
     }
@@ -125,7 +130,7 @@
     }
 
     .mainmenu:hover .menu {
-     margin-left: 65px;
+      margin-left: 65px;
     }
 
     .menu {
@@ -134,6 +139,8 @@
       opacity: 1;
       transition: 1s;
       padding: 5px 8px 0px 8px;
+      padding: 15px;
+
     }
 
     li:hover {
@@ -151,38 +158,37 @@
     p {
       margin: 15px;
     }
-    
-    </style>
+  </style>
 
 </head>
 
 <body>
 
-   <ol class="mainmenu">
+  <ol class="mainmenu">
 
-  <li>
-    <span class="menu">menu</span>
-  </li> 
+    <li>
+      <span class="menu">menu</span>
+    </li>
 
-  <li>
-    <img src="icons_security/edit.png" alt="" id="p1"><span class="e">edit</span>
-  </li> 
+    <li>
+      <img src="icons_security/edit.png" alt="" id="p1"><span class="e">edit</span>
+    </li>
 
-  <li>
-    <img src="icons_security/favorites.png" alt="" id="p2"><span class="f">favorites</span> 
-  </li>
+    <li>
+      <img src="icons_security/favorites.png" alt="" id="p2"><span class="f">favorites</span>
+    </li>
 
-  <li>
-    <img src="icons_security/history.png" alt="" id="p3"><span class="h">history</span>
-  </li> 
+    <li>
+      <img src="icons_security/history.png" alt="" id="p3"><span class="h">history</span>
+    </li>
 
-  <li>
-    <img src="icons_security/security.png" alt="" id="p4"><span class="sec">security</span>
-  </li> 
+    <li>
+      <img src="icons_security/security.png" alt="" id="p4"><span class="sec">security</span>
+    </li>
 
- <li>
-  <img src="icons_security/settings.png" alt="" id="p5"><span class="set">settings</span> 
- </li>
+    <li>
+      <img src="icons_security/settings.png" alt="" id="p5"><span class="set">settings</span>
+    </li>
 
   </ol>
 
@@ -190,39 +196,63 @@
 
     <h1>lorem Ipsum</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure tempore! Fuga?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit? Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt, tempora.
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt
+      commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae
+      asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure
+      tempore! Fuga?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit?
+      Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque
+      porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt,
+      tempora.
     </p>
 
     <h1>lorem Ipsum</h1>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure tempore! Fuga?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit? Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt, tempora.
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt
+      commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae
+      asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure
+      tempore! Fuga?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit?
+      Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque
+      porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt,
+      tempora.
     </p>
-    
+
     <h1>lorem Ipsum</h1>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure tempore! Fuga?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit? Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt, tempora.
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt
+      commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae
+      asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure
+      tempore! Fuga?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit?
+      Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque
+      porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt,
+      tempora.
     </p>
-    
+
     <h1>lorem Ipsum</h1>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure tempore! Fuga?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit? Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt, tempora.
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex exercitationem fugiat aliquam animi ea sed sunt
+      commodi nulla, ut cum maiores magnam voluptatum libero accusamus alias vitae laudantium culpa.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error ratione, totam quaerat repellat vitae
+      asperiores provident, reprehenderit accusantium delectus sequi enim dicta deserunt assumenda non repellendus iure
+      tempore! Fuga?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse nulla, quaerat architecto neque dicta odit?
+      Ipsam, blanditiis quos ab laborum facere ex rerum ea odit excepturi culpa placeat porro.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore nemo inventore, ducimus obcaecati itaque
+      porro commodi voluptatem quae illo temporibus iure nesciunt libero error. Expedita, repudiandae iusto? Deserunt,
+      tempora.
     </p>
-    
+
 
   </div>
-  
+
 </body>
 
 </html>
