@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Форма для ввода данных кредитной карты</title>
+  <style>
+    body {
+
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      background: linear-gradient(#123c61 50%, #000000 100%);
+      background-position: center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: white;
+      right: 150px;
+      background-color: orangered;
+      text-transform: uppercase;
+      position: relative;
+      padding: 10px;
+    }
+
+    form {
+      position: relative;
+      background: rgb(0, 200, 255);
+      width: 400px;
+      margin: 0 auto;
+      padding: 50px;
+      border-radius: 10px;
+
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    input[type="text"] {
+      width: 45%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    .expiration-inputs {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    form {
+      position: relative;
+      top: 300px;
+    }
+    input[type="text2"] {
+      width: 20%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    ::-webkit-input-placeholder{
+      color: rgba(0, 0, 0, 0.282);
+    }
+    input.card{
+      left: -100px;
+      position: relative;
+    }
+    input.card{
+      left: -100px;
+      position: relative;
+    }
+    input.card2{
+      left: -100px;
+      position: relative;
+    }
+    input.card3{
+      left: -60px;
+      position: relative;
+    }
+    span.cvv{
+      top: -30px;
+      position: relative
+    }
+  </style>
+</head>
+
+<body>
+
+  <form>
+    <h1 class="card">Credit card details</h1>
+    <label for="card-number">Card Number</label>
+    <input class="card" type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+    <label for="card-owner">Name On Card</label>
+    <input class="card" type="text" id="card-owner" placeholder="Name Surname" name="card-owner" required>
+    <label for="expiration-date">Expiry Date</label>
+    <div class="expiration-inputs">
+      <input class="mm" type="text2" id="expiration-month" name="expiration-month" placeholder="ММ" required>
+      <input class="gg" type="text2" id="expiration-year" name="expiration-year" placeholder="ГГ" required>
+      <label for="cvv"> <span class="cvv">CVV</span></label>
+      <input class="card3" type="text2" id="cvv" name="cvv" placeholder="***" required>
+    </div>
+
+  </form>
+</body>
+
+</html>
