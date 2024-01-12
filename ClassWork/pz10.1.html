@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Login form</title>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: orangered;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  box-shadow: 10px 10px  black;
+
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  background-color: white;
+  text-align: center;
+  border: 2px solid #fff;
+  color: black;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label {
+  top: -10px;
+}
+input:valid ~ label {
+  top: -10px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: black;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: black;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+/* #pass:focus ~ ion-icon {
+  opacity: 0;
+  transition: .5s;
+}
+
+.pass:hover #pass:valid ion-icon {
+  opacity: 0;
+  transition: .5s;
+} */
+
+#pass::-ms-reveal {
+  margin-right: 50px;
+}
+#pass::-ms-reveal  {
+  stroke: white;
+  fill: white;
+  color: #fff;
+  
+}
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 15px;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.forget label:nth-child(2) {
+  order: 1;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+}
+
+.register label input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.register label a {
+  color: orangered;
+  text-decoration: none;
+}
+
+.forget label a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: rgb(18, 242, 33);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  box-shadow: 0px 5px rgb(15, 160, 24);;
+}   
+
+.register {
+  font-size: 0.9em;
+  color: orangered;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: orangered;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+button.facebook{
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: -200px;
+    left: 700px;
+    background-color: blue;
+    
+}
+button.Twitter{
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: -200px;
+    left: 800px;
+    background-color: rgb(55, 165, 238);
+    text-align: center;
+    
+}
+img{
+    text-align: center;
+    position: relative;
+    right: 10px;
+    scale: 50%;
+}
+img.twit{
+    text-align: center;
+    position: relative;
+    right: 10px;
+    scale: 90%;
+}
+p{
+    position: relative;
+    top: 280px;
+    right: 250px;   
+    color: white;
+    font-family: "Poppins", sans-serif;
+    scale: 1.;
+}
+span.text{
+    text-align: center;
+    top: -18px;
+    position: relative;
+}
+</style>
+</head>
+
+<body>
+  <section>
+    <div class="form-box">
+      <div class="form-value">
+        <form action="">
+          <h2>Member Login</h2>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="text" id="email" minlength="1" required />
+            <label for="email">Username</label>
+          </div>
+          <div class="inputbox pass">
+            <input type="password" id="pass" minlength="1" required />
+            <label for="pass">Password</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </div>
+
+          <button>Login</button>
+          <div class="register">
+            <label>
+              <a href="#">Forgot password?</a>
+            </label>
+          </div>
+          
+        </form>
+        
+      </div>
+
+    </div>
+    <p>...Or log in with:</p>
+    <!-- <button class="facebook">Login</button> -->
+  </section>
+  <button class="facebook"><img src="pngwing.com-2.png"><span class="text">facebook</span></butto>
+  <button class="Twitter"><img class="twit" src="pngwing.com.png"><span class="text">Twitter</span></butto>
+</body>
+
+</html>
