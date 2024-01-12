@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Мини-библиотека со стилями для элементов ввода данных</title>
+<style>
+  /* Input в нетронутом состоянии */
+.input-default {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Input с корректными данными */
+.input-valid {
+  border: 1px solid green;
+  padding: 5px;
+}
+
+/* Input с некорректными данными */
+.input-invalid {
+  border: 1px solid red;
+  padding: 5px;
+}
+
+/* Checkbox в состоянии включен */
+.checkbox-checked {
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
+
+/* Checkbox в состоянии выключен */
+.checkbox-unchecked {
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+
+/* Radio button в состоянии включен */
+.radio-checked {
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
+
+/* Radio button в состоянии выключен */
+.radio-unchecked {
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+
+/* Кнопки (зеленые и красные) в обычном состоянии */
+.button-default {
+  background-color: #ccc;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Кнопки (зеленые и красные) при наведении мышкой */
+
+
+/* Неактивная кнопка */
+.button-disabled {
+  background-color: #ccc;
+  color: gray;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+/* Круглые кнопки (зеленые и красные) с иконками вместо текста */
+.button-round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.button-round-green {
+  background-color: green;
+  color: white;
+}
+
+.button-round-red {
+  background-color: red;
+  color: white;
+}
+
+/* Textarea */
+.textarea-default {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.button-active {
+  background-color: #3e8e41;
+  color: rgb(255, 255, 255);
+  background-color: #04eb32;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.button-hover {
+  color: rgb(255, 255, 255);
+  background-color: #041beb;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-hover:hover {
+  transition: 1s ease;
+  background-color: #5d00ff;
+}
+</style>
+</head>
+<body>
+  <h1>Мини-библиотека со стилями для элементов ввода данных</h1>
+
+  <h2>Input в нетронутом состоянии</h2>
+  <input type="text" class="input-default">
+
+  <h2>Input с корректными данными</h2>
+  <input type="text" class="input-valid">
+
+  <h2>Input с некорректными данными</h2>
+  <input type="text" class="input-invalid">
+
+  <h2>Checkbox</h2>
+  <label class="switch">
+    <input type="checkbox" class="checkbox-checked"> <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </label>
+  <label class="switch">
+    <input type="checkbox" class="checkbox-unchecked"> <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </label>
+
+  <h2>Radio button</h2>
+  <label>
+    <h3>Gender:</h3>
+    <input type="radio" name="radio" class="radio-checked"> Male
+  </label>
+  <label>
+    <input type="radio" name="radio" class="radio-unchecked"> Female
+  </label>
+
+  <h2>Кнопки</h2>
+  <button class="button-default">Обычная кнопка</button>
+  <button class="button button-active">Активная кнопка</button>
+  <button class="button-hover">Наведите на меня</button>
+  <button class="button-default button-disabled" disabled>Неактивная кнопка</button>
+  <button class="button-round button-round-green">+</button>
+  <button class="button-round button-round-red">-</button>
+
+
+  <h2>Textarea</h2>
+  <textarea class="textarea-default"></textarea>
+</body>
+</html>
