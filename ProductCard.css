@@ -117,6 +117,7 @@ p {
   background: #fff;
   color: #4ba9e9;
   opacity: 1;
+  transition: 0.3s;
 }
 .group {
   position: relative;
@@ -149,4 +150,9 @@ p {
 }
 div.card2{
   margin-left: 50px;
+}
+a.buy:hover{
+  background-color: gray;
+  color: white;
+  transition: 0.3s;
 }
