@@ -1,415 +1,417 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <title>Starbucks Landing Page</title>
 
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title>Starbucks Landing Page</title>
+  <link rel="stylesheet" href="style_menu.css">
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: 10px auto;
+    }
+
+    header .left-side a img {
+      width: 80px;
+    }
+
+    header .right-side {
+      display: flex;
+    }
+
+    header .right-side .nav-link-wrapper a {
+      padding: 10px;
+      margin: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 80%;
+      margin: 50px auto;
+    }
+
+    .container .left-side {
+      text-align: center;
+    }
+
+    .container .left-side h1 {
+      font-size: 60px;
+      letter-spacing: 2px;
+    }
+
+    .container .left-side h1 .green {
+      color: green;
+      font-family: "Viga", serif;
+    }
+
+    .container .left-side p {
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .container .left-side a {
+      display: inline-block;
+      background: green;
+      padding: 12px 18px 12px 18px;
+      text-decoration: none;
+      border-radius: 25px;
+      color: white;
+      margin-top: 15px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .container .right-side {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .container .right-side img {
+      max-width: 50%;
+    }
+
+    .container .right-side .box {
+      position: absolute;
+      display: grid;
+      right: 0%;
+      bottom: 0%;
+    }
+
+    .container .right-side .box img {
+      width: 25px;
+      margin: 10px;
+    }
+
+    .container .right-side .box img.facebook {
+      width: 18.5px;
+    }
+
+    .thumb {
+      display: flex;
+      margin-top: -60px;
+      justify-content: center;
+    }
+
+    .thumb a:hover {
+      margin-top: -15px;
+      transition: 0.2s;
+    }
+
+    .thumb img {
+      width: 54px;
+      margin: 20px;
+    }
+
+    @media (min-width: 1140px) {
       * {
-  margin: 0px;
-  padding: 0px;
-}
+        margin: 0px;
+        padding: 0px;
+      }
 
-body {
-  overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
-}
+      body {
+        overflow-x: hidden;
+      }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  margin: 10px auto;
-}
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 10px auto;
+      }
 
-header .left-side a img {
-  width: 80px;
-}
+      header .left-side a img {
+        width: 80px;
+      }
 
-header .right-side {
-  display: flex;
-}
+      header .right-side {
+        display: flex;
+      }
 
-header .right-side .nav-link-wrapper a {
-  padding: 10px;
-  margin: 10px;
-  text-decoration: none;
-  color: black;
-}
+      header .right-side .nav-link-wrapper a {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+      }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 80%;
-  margin: 50px auto;
-}
+      .container {
+        max-width: 90%;
+        margin: 50px auto;
+        display: flex;
 
-.container .left-side {
-  text-align: center;
-}
+      }
 
-.container .left-side h1 {
-  font-size: 60px;
-  letter-spacing: 2px;
-}
+      .container .left-side {
+        text-align: left;
+        flex: 1;
+      }
 
-.container .left-side h1 .green {
-  color: green;
-  font-family: "Viga", serif;
-}
+      .container .left-side h1 {
+        font-size: 60px;
+        letter-spacing: 2px;
+      }
 
-.container .left-side p {
-  font-size: 20px;
-  letter-spacing: 0.5px;
-}
+      .container .left-side h1 .green {
+        color: green;
+        font-family: "Viga", serif;
+      }
 
-.container .left-side a {
-  display: inline-block;
-  background: green;
-  padding: 12px 18px 12px 18px;
-  text-decoration: none;
-  border-radius: 25px;
-  color: white;
-  margin-top: 15px;
-  font-size: 17px;
-  font-weight: bold;
-}
+      .container .left-side p {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
 
-.container .right-side {
-  text-align: center;
-  margin-top: 60px;
-}
+      .container .left-side a {
+        display: inline-block;
+        background: green;
+        padding: 12px 18px 12px 18px;
+        text-decoration: none;
+        border-radius: 25px;
+        color: white;
+        margin-top: 15px;
+        font-size: 17px;
+        font-weight: bold;
+      }
 
-.container .right-side img {
-  max-width: 50%;
-}
+      .container .right-side {
+        flex: 1;
+        text-align: center;
+      }
 
-.container .right-side .box {
-  position: absolute;
-  display: grid;
-  right: 0%;
-  bottom: 0%;
-}
+      .container .right-side img {
+        width: 330px;
+        margin-left: 150px;
+        margin-top: -30px;
+      }
 
-.container .right-side .box img {
-  width: 25px;
-  margin: 10px;
-}
+      .container .right-side .box {
+        display: grid;
+        position: absolute;
+        bottom: 40%;
+        right: 1%;
+      }
 
-.container .right-side .box img.facebook {
-  width: 18.5px;
-}
+      .container .right-side .box img {
+        width: 25px;
+        margin: 10px;
+      }
 
-.thumb {
-  display: flex;
-  margin-top: -60px;
-  justify-content: center;
-}
+      .container .right-side .box img.facebook {
+        width: 18.5px;
+      }
 
-.thumb a:hover {
-  margin-top: -15px;
-  transition: 0.2s;
-}
+      .thumb {
+        position: absolute;
+        bottom: 0%;
+        left: 40%;
+      }
 
-.thumb img {
-  width: 54px;
-  margin: 20px;
-}
+      .thumb a:hover {
+        margin-top: -15px;
+        transition: 0.2s;
+      }
 
-@media (min-width: 1140px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
+      .thumb img {
+        width: 54px;
+        margin: 20px;
+      }
+    }
 
-  body {
-    overflow-x: hidden;
-  }
+    @media only screen and (max-width: 650px) {
+      header {
+        display: block;
+      }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 10px auto;
-  }
+      header .left-side a img {
+        width: 80px;
+        margin: auto;
+        display: block;
+      }
 
-  header .left-side a img {
-    width: 80px;
-  }
+      header .right-side {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+      }
 
-  header .right-side {
-    display: flex;
-  }
+      header .right-side .nav-link-wrapper a {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+      }
 
-  header .right-side .nav-link-wrapper a {
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: black;
-  }
+      .container {
+        max-width: 80%;
+        margin: 50px auto;
+        flex-direction: column-reverse
+      }
 
-  .container {
-    max-width: 90%;
-    margin: 50px auto;
-    display: flex;
-  }
+      .container .left-side {
+        text-align: center;
+      }
 
-  .container .left-side {
-    text-align: left;
-    flex: 1;
-  }
+      .container .left-side h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+      }
 
-  .container .left-side h1 {
-    font-size: 60px;
-    letter-spacing: 2px;
-  }
+      .container .left-side h1 .green {
+        color: green;
+        font-family: "Viga", serif;
+      }
 
-  .container .left-side h1 .green {
-    color: green;
-    font-family: "Viga", serif;
-  }
+      .container .left-side p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+      }
 
-  .container .left-side p {
-    font-size: 20px;
-    letter-spacing: 0.5px;
-  }
+      .container .left-side a {
+        display: inline-block;
+        background: green;
+        padding: 12px 18px 12px 18px;
+        text-decoration: none;
+        border-radius: 25px;
+        color: white;
+        margin-top: 15px;
+        font-size: 16.2px;
+        font-weight: bold;
+      }
+    }
 
-  .container .left-side a {
-    display: inline-block;
-    background: green;
-    padding: 12px 18px 12px 18px;
-    text-decoration: none;
-    border-radius: 25px;
-    color: white;
-    margin-top: 15px;
-    font-size: 17px;
-    font-weight: bold;
-  }
+    @media only screen and (max-width: 404px) {
+      header {
+        display: block;
+      }
 
-  .container .right-side {
-    flex: 1;
-    text-align: center;
-  }
+      header .left-side a img {
+        width: 80px;
+        margin: auto;
+        display: block;
+      }
 
-  .container .right-side img {
-    width: 330px;
-    margin-left: 150px;
-    margin-top: -30px;
-  }
+      header .right-side {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+      }
 
-  .container .right-side .box {
-    display: grid;
-    position: absolute;
-    bottom: 40%;
-    right: 1%;
-  }
+      header .right-side .nav-link-wrapper a {
+        padding: 5px;
+        margin: 5px;
+        text-decoration: none;
+        color: black;
+      }
 
-  .container .right-side .box img {
-    width: 25px;
-    margin: 10px;
-  }
+      .container .right-side img {
+        width: 330px;
+        margin-top: -30px;
+        flex-direction: column-reverse
+      }
 
-  .container .right-side .box img.facebook {
-    width: 18.5px;
-  }
+      .container .right-side img {
+        max-width: 50%;
+      }
 
-  .thumb {
-    position: absolute;
-    bottom: 0%;
-    left: 40%;
-  }
+      .container .right-side .box {
+        display: none;
+        position: absolute;
+        bottom: 250px;
+        right: 25px;
+      }
 
-  .thumb a:hover {
-    margin-top: -15px;
-    transition: 0.2s;
-  }
+      .container .right-side .box img {
+        width: 25px;
+        margin: 10px;
+      }
 
-  .thumb img {
-    width: 54px;
-    margin: 20px;
-  }
-}
+      .container .right-side .box img.facebook {
+        width: 18.5px;
+      }
 
-@media only screen and (max-width: 650px) {
-  header {
-    display: block;
-  }
+      .thumb {
+        display: flex;
+        margin-top: -30px;
+        justify-content: center;
+      }
 
-  header .left-side a img {
-    width: 80px;
-    margin: auto;
-    display: block;
-  }
+      .thumb a:hover {
+        margin-top: -15px;
+        transition: 0.2s;
+      }
 
-  header .right-side {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-  }
+      .thumb img {
+        width: 45px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
 
-  header .right-side .nav-link-wrapper a {
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: black;
-  }
-  .container {
-    max-width: 80%;
-    margin: 50px auto;
-  }
+<body>
+  <header>
+    <div class="left-side">
+      <a href="#"> <img src="img/logo.png" alt="" /> </a>
+    </div>
+    <div class="right-side">
+      <div class="nav-link-wrapper"><a href="">Home</a></div>
+      <div class="nav-link-wrapper"><a href="#Menu">Menu
+      </a></div>
+      <div class="nav-link-wrapper"><a href="">What's New</a></div>
+      <div class="nav-link-wrapper"><a href="">Contact</a></div>
+    </div>
+  </header>
 
-  .container .left-side {
-    text-align: center;
-  }
-
-  .container .left-side h1 {
-    font-size: 50px;
-    letter-spacing: 2px;
-  }
-
-  .container .left-side h1 .green {
-    color: green;
-    font-family: "Viga", serif;
-  }
-
-  .container .left-side p {
-    font-size: 18px;
-    letter-spacing: 0.5px;
-  }
-
-  .container .left-side a {
-    display: inline-block;
-    background: green;
-    padding: 12px 18px 12px 18px;
-    text-decoration: none;
-    border-radius: 25px;
-    color: white;
-    margin-top: 15px;
-    font-size: 16.2px;
-    font-weight: bold;
-  }
-}
-
-@media only screen and (max-width: 404px) {
-  header {
-    display: block;
-  }
-
-  header .left-side a img {
-    width: 80px;
-    margin: auto;
-    display: block;
-  }
-
-  header .right-side {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-  }
-
-  header .right-side .nav-link-wrapper a {
-    padding: 5px;
-    margin: 5px;
-    text-decoration: none;
-    color: black;
-  }
-  .container .right-side img {
-    width: 330px;
-    margin-top: -30px;
-  }
-  .container .right-side img {
-    max-width: 50%;
-  }
-
-  .container .right-side .box {
-    display: none;
-    position: absolute;
-    bottom: 250px;
-    right: 25px;
-  }
-
-  .container .right-side .box img {
-    width: 25px;
-    margin: 10px;
-  }
-
-  .container .right-side .box img.facebook {
-    width: 18.5px;
-  }
-
-  .thumb {
-    display: flex;
-    margin-top: -30px;
-    justify-content: center;
-  }
-
-  .thumb a:hover {
-    margin-top: -15px;
-    transition: 0.2s;
-  }
-
-  .thumb img {
-    width: 45px;
-    margin: 20px;
-  }
-}
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="left-side">
-        <a href="#"> <img src="img/logo.png" alt="" /> </a>
-      </div>
-      <div class="right-side">
-        <div class="nav-link-wrapper"><a href="">Home</a></div>
-        <div class="nav-link-wrapper"><a href="">Menu</a></div>
-        <div class="nav-link-wrapper"><a href="">What's New</a></div>
-        <div class="nav-link-wrapper"><a href="">Contact</a></div>
-      </div>
-    </header>
-
-    <div class="container">
-      <div class="left-side">
-        <h1>
-          It's not just Coffee <br />
-          It's <span class="green"> Starbucks </span>
-        </h1>
-        <p>
-          Welcome to Starbucks, where every sip is a journey through the world
-          of exceptional coffee. Immerse yourself in the rich aroma and bold
-          flavors that define our carefully curated selection of ethically
-          sourced, premium coffees.
-        </p>
-        <a href="">Learn More</a>
-      </div>
-      <div class="right-side">
-        <img src="img/img1.png" alt="" class="starbucks" />
-        <div class="box">
-          <a href="#">
-            <img class="facebook" src="img/facebook.png" alt=""
-          /></a>
-          <a href="#"> <img src="img/instagram.png" alt="" /></a>
-          <a href="#"> <img src="img/twitter.png" alt="" /></a>
-        </div>
+  <div class="container">
+    <div class="left-side">
+      <h1>
+        It's not just Coffee <br />
+        It's <span class="green"> Starbucks </span>
+      </h1>
+      <p>
+        Welcome to Starbucks, where every sip is a journey through the world
+        of exceptional coffee. Immerse yourself in the rich aroma and bold
+        flavors that define our carefully curated selection of ethically
+        sourced, premium coffees.
+      </p>
+      <a href="">Learn More</a>
+    </div>
+    <div class="right-side">
+      <img src="img/img1.png" alt="" class="starbucks" />
+      <div class="box">
+        <a href="https://www.youtube.com/channel/UCj4nCgtjKJppK_IZeY8TUJg?ysclid=lrtdhvyoqv202374257" target="_blank">
+          <img url class="facebook" src="img/pngwing.com (5).png" alt="" /></a>
+        <a href="#"> <img src="img/instagram.png" alt="" /></a>
+        <a href="#"> <img src="img/twitter.png" alt="" /></a>
       </div>
     </div>
-    <div class="thumb">
+  </div>
+  <div class="thumb">
       <a href="#bottom"
         ><img
-          id="bottom"
           src="img/thumb1.png"
           onclick="imgSlider('img/img1.png');"
         />
@@ -420,9 +422,85 @@ header .right-side .nav-link-wrapper a {
       <a href="#bottom"
         ><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');" />
       </a>
-    </div>
-    <script>function imgSlider(anything){
-      document.querySelector('.starbucks').src = anything;
-    }</script>
-  </body>
+
+  </div>
+
+
+  <script>function imgSlider(anything){
+      document.querySelector('.starbucks').src = anything;}
+    </script>
+  <div style="margin-top: 300px;" class="container">
+    <div class="left-side">
+      <h1 id="Menu">
+        Menu
+      </h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="card">
+        <div class="imgBx">
+          <img src="img/img2.png" />
+        </div>
+        <div class="details">
+          <h3>Pink Coffee<br /><span>Starbucks</span></h3>
+          <h4>Size</h4>
+          <ul class="size">
+            <li>0.3</li>
+            <li>0.5</li>
+            <li>0.75</li>
+          </ul>
+          <div class="group">
+            <h2>$9<small>.99</small></h2>
+            <a class="buy" href="#">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="card2">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/img1.png" />
+          </div>
+          <div class="details">
+            <h3>Green Coffee<br /><span>Starbucks</span></h3>
+
+            <h4>Size</h4>
+            <ul class="size">
+              <li>0.3</li>
+              <li>0.5</li>
+              <li>0.75</li>
+            </ul>
+            <div class="group">
+              <h2>$9<small>.99</small></h2>
+              <a class="buy" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/img3.png" />
+          </div>
+          <div class="details">
+            <h3>Purple Coffee<br /><span>Starbucks</span></h3>
+
+            <h4>Size</h4>
+            <ul class="size">
+              <li>0.3</li>
+              <li>0.5</li>
+              <li>0.75</li>
+            </ul>
+            <div class="group">
+              <h2>$9<small>.99</small></h2>
+              <a class="buy" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <footer>
+        Copyright 2024
+      </footer> -->
+</body>
+
 </html>
