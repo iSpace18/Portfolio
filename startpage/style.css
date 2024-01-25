@@ -187,9 +187,9 @@ header .right-side .nav-link-wrapper a {
   }
 
   .container .right-side img {
-    width: 330px;
-    margin-left: 150px;
-    margin-top: -30px;
+    width: 530px;
+    margin-left: 550px;
+    margin-top: -150px;
   }
 
   .container .right-side .box {
@@ -352,4 +352,28 @@ header .right-side .nav-link-wrapper a {
     width: 45px;
     margin: 20px;
   }
+}
+sup{
+  color: rgba(0, 0, 0, 0.342);
+}
+img.starbucks{
+  scale: 0.5;
+  position: relative;
+  display: flex;
+  left: -225px;
+  top: 50px;
+}
+h2.info{
+  position: relative;
+  display: flex;
+  top: 230px;
+  left: -350px;
+}
+p.sinfo{
+  top: 155px;
+  left: -350px;
+  scale: 0.75;
+
+  position: relative;
+  display: flex;
 }
