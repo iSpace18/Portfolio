@@ -32,3 +32,7 @@ const btnUp = {
 }
 
 btnUp.addEventListener();
+function changeBackground(color) {
+  var body = document.querySelector("body");
+  body.className = color;
+}

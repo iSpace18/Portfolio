@@ -1,13 +1,13 @@
 * {
   margin: 0px;
   padding: 0px;
+
 }
 
 body {
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -422,4 +422,28 @@ p.sinfo{
     transition: 0.5s ease;
     background-color: green; /* цвет заднего фона при наведении */
   }
+}
+body{
+  background: -webkit-linear-gradient(135deg, rgb(0, 133, 22), rgb(255, 255, 255));
+  background: -moz-linear-gradient(135deg, rgb(0, 133, 22), rgb(255, 255, 255));
+  background: linear-gradient(135deg, rgb(0, 133, 22), rgb(255, 255, 255));
+  transition: 0.5s ease;
+
+}
+.color1 {
+  background: -webkit-linear-gradient(135deg, rgb(0, 169, 27), rgb(255, 255, 255));
+  background: -moz-linear-gradient(135deg, rgb(0, 169, 27), rgb(255, 255, 255));
+  background: linear-gradient(135deg, rgb(0, 169, 27), rgb(255, 255, 255));
+}
+
+.color2 {
+  background: -webkit-linear-gradient(135deg, rgb(255, 116, 245), rgb(255, 255, 255));
+  background: -moz-linear-gradient(135deg, rgb(255, 116, 245), rgb(255, 255, 255));
+  background: linear-gradient(135deg, rgb(255, 116, 245), rgb(255, 255, 255));
+}
+
+.color3 {
+  background: -webkit-linear-gradient(135deg, rgb(214, 81, 255), rgb(255, 255, 255));
+  background: -moz-linear-gradient(135deg, rgb(214, 81, 255), rgb(255, 255, 255));
+  background: linear-gradient(135deg, rgb(214, 81, 255), rgb(255, 255, 255));
 }
