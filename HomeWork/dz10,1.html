@@ -1,0 +1,459 @@
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cur {
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+            transition: 300ms;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-weight: 500;
+        }
+
+        .container {
+            width: 45%
+        }
+
+        .btnwhite {
+            background-color: rgb(131, 131, 131) !important;
+            color: black !important;
+            transition: 300ms;
+        }
+
+        .btnwhite:hover {
+            background-color: rgb(0, 0, 0) !important;
+            color: rgb(255, 255, 255) !important;
+            transition: 300ms;
+        }
+
+        .btnmore:hover {
+            background-color: rgb(99, 99, 99);
+            transition: 300ms;
+        }
+
+        .btnmore {
+            margin-top: 15px;
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 5px;
+            background-color: rgb(75, 75, 75);
+            text-decoration: none;
+            color: white;
+            transition: 300ms;
+        }
+
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .hibar div.a {
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            transition: 300ms;
+
+        }
+
+        .hibar.a {
+            border-radius: 50%;
+            transition: 300ms;
+        }
+
+        .hibar.a:hover {
+            background-color: rgb(66, 66, 66);
+            transition: 300ms;
+        }
+
+        .hibar.a.img:hover {
+            opacity: 0.6;
+            transition: 300ms;
+        }
+
+        .hibar {
+            justify-content: space-between;
+            display: flex;
+            background-color: darkcyan;
+            width: 100%;
+        }
+
+        .hibar.div {
+            display: flex;
+            align-items: center;
+            background-color: darkcyan;
+        }
+
+        .newscontainer.div {
+            border: solid 1px rgb(214, 214, 214);
+            display: flex;
+            flex-direction: row;
+            padding: 7px;
+        }
+
+        .newscontainer img {
+            height: 140px;
+            height: 140px;
+            margin-right: 10px;
+        }
+
+        .newscontainer.div.div.div {
+            display: flex;
+        }
+
+        .hibar.a {
+            margin-right: 30px;
+        }
+
+        .newscontainer.div.div.div h2 {
+            flex: 1
+        }
+
+        .newscontainer.div.div.div p {
+            font-size: 14px;
+        }
+
+        .reward {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .reward img {
+            height: 35px;
+        }
+
+        .speechbubble {
+            position: relative;
+            background-color: rgb(214, 214, 214);
+            height: 40px;
+            color: rgb(79, 79, 79);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .oside {
+            display: flex;
+            width: 40%;
+            align-items: center;
+            color: black;
+
+        }
+
+        .medal {
+            width: 10%;
+            display: flex;
+            align-items: center;
+        }
+
+        .after {
+            content: '';
+            width: 0;
+            height: 0;
+            border: 20px solid;
+            z-index: -1;
+            color: white
+        }
+
+
+        .arig {
+            border-right-color: rgb(214, 214, 214) !important;
+        }
+
+        .ldate {
+            width: 30% !important;
+            margin: 0 10% 0 0;
+        }
+
+        .rdate {
+            width: 30% !important;
+            margin: 0 0 0 10%;
+        }
+
+        .alef {
+            border-left-color: rgb(214, 214, 214) !important;
+        }
+
+
+
+        .hibar div.a:hover {
+            background-color: rgb(1, 121, 121);
+        }
+
+        @media screen and (max-width: 800px) {
+            .main {
+                flex-direction: column
+            }
+
+            .container {
+                width: 100%
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .cur {
+                display: none;
+            }
+
+            .newscontainer.div.div.div {
+                flex-direction: column;
+            }
+
+            .hibar div.a {
+                padding: 10px;
+                transition: 300ms;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: blue;">
+        <img src="#" class=cur>
+        <a href="#">Home</a>
+        <a href="#">My works</a>
+        <a href="#">Settings</a>
+    </header>
+    <h1>Dakota Greenaway(ABC_123)</h1>
+    <div class=main>
+        <div class=container>
+            <h1>News</h1>
+            <div class=newscontainer>
+                <div><img src="icons//holiday.png" alt="">
+                    <div>
+                        <div>
+                            <h2>Weekends</h2>
+                            <p>1 days ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit fugiat, placeat
+                            voluptatem quasi assumenda doloremque ipsum porro sequi nobis consequatur, accusantium
+                            cumque quis provident ipsam ea ducimus reprehenderit nostrum.</p>
+
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h2>Programming consequatur</h2>
+                            <p>3 days ago</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla laborum tenetur
+                            vitae temporibus fugit excepturi natus quaerat eveniet recusandae itaque ratione
+                            aperiam, reiciendis, suscipit beatae voluptatum perspiciatis dolore veniam.</p>
+
+                    </div>
+                </div>
+                <div><img src="icons//bank.png" alt="">
+                    <div>
+                        <div>
+                            <h2>Meeting with ABC</h2>
+                            <p>20.03.2019</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nam consequatur, unde
+                            voluptatum earum, beatae sequi voluptates quasi eum, tempore quis. Nam consequatur
+                            perspiciatis ipsum praesentium ratione quaerat expedita eum?</p>
+
+                    </div>
+                </div>
+            </div>
+            <a href='' class=btnmore>More</a>
+        </div>
+        <div class=container>
+            <h1>Rewards</h1>
+            <div class=reward>
+                <div class=oside>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class='oside ldate'>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        13.09.2022
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class='oside rdate'>
+                    <div class="speechbubble">
+                        11.09.2022
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class=oside>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class=oside>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class='oside ldate'>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        13.09.2022
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class='oside rdate'>
+                    <div class="speechbubble">
+                        11.09.2022
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class=oside>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class=oside>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class='oside ldate'>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        13.09.2022
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class='oside rdate'>
+                    <div class="speechbubble">
+                        11.09.2022
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class=oside>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class=oside>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class='oside ldate'>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        13.09.2022
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class='oside rdate'>
+                    <div class="speechbubble">
+                        11.09.2022
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class=oside>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class=oside>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class='oside ldate'>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        13.09.2022
+                    </div>
+                </div>
+            </div>
+            <div class=reward>
+                <div class='oside rdate'>
+                    <div class="speechbubble">
+                        11.09.2022
+                    </div>
+                    <div class='after alef'></div>
+                </div>
+                <div class=medal>
+                    <h2>+1</h2> <img src="icons//badge.png" alt="">
+                </div>
+                <div class=oside>
+                    <div class="after arig"></div>
+                    <div class="speechbubble">
+                        Class attended
+                    </div>
+                </div>
+            </div>
+
+            <a href='' class='btnmore btnwhite'>More</a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
