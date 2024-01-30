@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +11,19 @@
         .container {
             width: 800px;
             margin: 0 auto;
-            display: flex;
-            left: 300px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 20px;
         }
-
         img {
             width: 70px;
         }
-
         .box {
             display: flex;
-            width: 200px;
+            flex-direction: column;
             gap: 20px;
             margin-top: 50px;
         }
-
         .sms {
             font-size: 20px;
             background-color: #ffb6c1;
@@ -34,36 +31,15 @@
             border-radius: 50px 50px 50px 10px / 50px 50px 50px 0px;
             margin: 20px 0;
         }
-
         .bl {
             background-color: #add8e6;
             border-radius: 50px 50px 0px 50px;
         }
-        .girl {
-            margin-top: 220px;
-        }
-
-        .girl1 {
-            margin-top: 165px;
-        }
-
-        .boy {
-            margin: 210px 20px;
-        }
-
-        .boy1 {
-            margin: -40px 20px;
-        }
-        .boy2 {
-            margin: 190px 20px;
-        }
         .grey {
             color: gray;
-
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="item">
@@ -89,7 +65,6 @@
                 <div class="foto"><img src="icons/avatar_2.png" alt="girl"></div>
             </div>
         </div>
-
         <div class="item2">
             <div class="sms">
                 <p>Hello!</p>
@@ -110,7 +85,6 @@
                 <p style="text-align: right;">Me too</p>
             </div>
         </div>
-
         <div class="item">
             <div class="box boy">
                 <div class="foto"><img src="icons/avatar_1.png" alt="girl"></div>
@@ -136,5 +110,4 @@
         </div>
     </div>
 </body>
-
 </html>

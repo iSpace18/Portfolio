@@ -33,6 +33,7 @@ const btnUp = {
 
 btnUp.addEventListener();
 function changeBackground(color) {
+  imgSlider(event.target.src)
   var body = document.querySelector("body");
   body.className = color;
 }
