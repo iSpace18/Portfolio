@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+
+    header {
+      background-color: rgb(85, 85, 85);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      padding-left: 30px;
+      color: white;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      margin-left: 0;
+    }
+
+    .nav li {
+      margin-right: 70px;
+
+    }
+
+    .nav li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .container {
+      min-width: 600px;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .articles {
+      background: white;
+      display: grid;
+      grid-gap: 20px;
+    }
+
+    .article {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: whitesmoke;
+      padding: 20px;
+      height: 370px;
+
+    }
+
+    .sidebaar2 {
+      margin-top: 30px;
+      background-color: whitesmoke;
+      padding: 20px;
+      font-style: italic;
+    }
+
+    .events {
+      list-style: none;
+      padding: 0;
+    }
+
+    .event img {
+      width: 50px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Lorem Site</div>
+    <nav>
+      <ul style="left: 100px;position: relative;" class="nav">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Tests</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="articles">
+      <div class="article">
+        <h2>What is Lorem ipsum?</h2>
+        <p style="color: rgba(0, 0, 0, 0.37);">30.03.2019 11:20</p>
+        <img src="icon/html5img.png" alt="Article Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec faucibus ipsum. Nullam euismod dolor sed
+          nunc fermentum, vitae lobortis nunc lacinia. Mauris ut ipsum eget dolor tincidunt fringilla. Donec auctor,
+          magna nec feugiat malesuada, nisl leo tincidunt sapien, ut eleifend mi mi a lorem. Quisque nec nisl in purus
+          semper pellentesque. Sed fringilla, mi eu congue iaculis, enim felis lacinia ligula, a hendrerit dui tellus id
+          libero.</p>
+      </div>
+
+    </div>
+    <div class="sidebar">
+      <div style="background-color: rgb(255, 255, 255);">
+
+        <h3>Events</h3>
+        <ul class="events">
+          <li class="event">
+            <img src="icon/calendar_19.png" alt="Event Image">
+            <span style="position: relative;top: -20px;">Event 1</span>
+          </li>
+          <li class="event">
+            <img src="icon/calendar_27.png" alt="Event Image">
+            <span style="position: relative;top: -20px;">Event 2</span>
+          </li>
+          <li class="event">
+            <img src="icon/calendar_7.png" alt="Event Image">
+            <span style="position: relative;top: -20px;">Event 3</span>
+          </li>
+          <li class="event">
+            <img src="icon/calendar_19.png" alt="Event Image">
+            <span style="position: relative;top: -20px;">Event 4</span>
+          </li>
+          <li class="event">
+            <img src="icon/calendar_27.png" alt="Event Image">
+            <span style="position: relative;top: -20px;">Event 5</span>
+          </li>
+          <li class="event">
+            <img src="icon/calendar_7.png" alt="Event Image">
+            <span style="position: relative;top: -20px;">Event 6</span>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebaar2" style="background-color: rgb(255, 255, 255);">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
