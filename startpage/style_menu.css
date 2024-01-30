@@ -17,11 +17,47 @@
   position: relative;
   min-width: 300px;
   height: 100%;
-  background: WHITE;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(255, 210, 246)
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(255, 210, 246)
+  );
+  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 210, 246));
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
+}
+.card2 .imgBx {
+  background: -webkit-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(193, 255, 206)
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(193, 255, 206)
+  );
+  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(193, 255, 206));
+}
+.card3 .imgBxx {
+  background: -webkit-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(237, 173, 247)
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(237, 173, 247)
+  );
+  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(237, 173, 247));
 }
 .card .imgBx img {
   max-width: 250px;
@@ -43,10 +79,6 @@
   transition: 0.5s ease-in-out;
 }
 .card2 .details {
-  position: absolute;
-  left: 0;
-  width: 300px;
-  height: 100%;
   background-color: green;
   display: flex;
   justify-content: center;
@@ -57,7 +89,7 @@
 .card3 .details {
   position: absolute;
   left: 0;
-  width: 300px;
+
   height: 100%;
   background-color: purple;
   display: flex;
@@ -167,6 +199,7 @@ div.card2 {
   position: relative;
   top: -390px;
   left: 550px;
+  width: 300px;
 }
 
 .card2 {
@@ -177,4 +210,7 @@ div.card2 {
   position: relative;
   top: -780px;
   right: -1200px;
+}
+div.card3 {
+  width: 300px;
 }
