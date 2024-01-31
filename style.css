@@ -6,11 +6,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-background-color:#fefffe;
-background-image: url(1920x1152_0xac120003_12726234471666876992.jpeg);
+font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+background-color:#000000;
 background-image: no-repeat;
-background-size: cover;
+background-size: 1800px;
 }
 
 header {
@@ -18,15 +17,10 @@ header {
   margin-right: 30px;
   margin-left: 30px;
   margin-top: 10px;
-  background-color: #04101ca9;
+  background-color: #18181829;
   color: #fff;
   padding: 20px;
   font-family: system-ui;
-
-}
-
-header ul{ 
-  text-align: end;
 }
 nav ul {
   list-style: none;
@@ -47,4 +41,56 @@ section {
 }
 .project {
   margin-bottom: 20px;
+}
+ul { 
+  margin: 100px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+h1{
+  color: rgb(255, 255, 255);
+  font: bold 34px/1.4 'Open Sans', arial, sans-serif;
+  padding: 20px;
+  position:relative;
+  text-align: center;
+  margin-right: 35px;
 }

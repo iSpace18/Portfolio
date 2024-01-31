@@ -1,373 +1,319 @@
 <head>
-  <!DOCTYPE html>
-  <html lang="en">
-  <html>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    <html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lenar</title>
-  <style>
-    input {
-    border-radius: 5px 5px 0 0px !important;
-    border: 0;
-    background: #f9f9f9;
-    color: #515151;
-    padding: 4px 1%;
-    margin-bottom: 7px;
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-}
+    <title>9.3</title>
+    <style>
+        input {
+            border-radius: 5px 5px 0 0px !important;
+            border: 0;
+            background: #f9f9f9;
+            color: #515151;
+            padding: 4px 1%;
+            margin-bottom: 7px;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+        }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-form>div>div {
-    width: 50%;
-    margin: 0px 20px 0px 20px;
-}
+        form div div {
+            width: 50%;
+            margin: 0px 20px 0px 20px;
+        }
 
-.inp {
-    display: flex;
+        .inp {
+            display: flex;
 
-}
+        }
 
-#pass {
-    margin-right: 15px;
-}
+        .pass {
+            margin-right: 15px;
+        }
 
-form>div>div>div img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-}
+        form div div div img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
 
-.cbox>input {
-    height: 15px;
-    width: 15px;
-    margin-right: 5px;
-}
+        .cbox input {
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+        }
 
-#persd>div {
-    display: flex;
-    height: 40px;
-}
+        .persd div {
+            display: flex;
+            height: 40px;
+        }
 
-.cbox {
-    margin: 10px 20px 0 20px;
-}
+        .cbox {
+            margin: 10px 20px 0 20px;
+        }
 
-select {
-    width: 50%;
-    border: 0px;
-    border-bottom: 1px solid black;
-}
+        select {
+            width: 50%;
+            border: 0px;
+            border-bottom: 1px solid black;
+        }
 
-select:focus {
-    outline: 0px;
-}
+        select:focus {
+            outline: 0px;
+        }
 
-select:focus {
-    background-color: rgb(201, 201, 201);
-}
+        select:focus {
+            background-color: rgb(201, 201, 201);
+        }
 
-option:focus {
-    background-color: rgba(190, 190, 190, 0.993);
-}
+        option:focus {
+            background-color: rgba(190, 190, 190, 0.993);
+        }
 
-#persd>div>input {
-    margin: 0px 15px 0px 0px;
-    width: 50%;
-}
+        .persd div input {
+            margin: 0px 15px 0px 0px;
+            width: 50%;
+        }
 
-button {
-    border: none;
-    display: inline-block;
-    background: rgb(96, 96, 96);
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 1;
-    font-weight: 100;
-    transition: 300ms;
-    margin: 10px;
-    width: 25%;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: 20px;
-}
+        button {
+            border: none;
+            display: inline-block;
+            background: #008b8b;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 100;
+            transition: 300ms;
+            margin: 10px;
+            width: 25%;
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
 
-#visibl hr {
-    height: 3px;
-    margin: 5px 0 0 0;
-}
+        .visibl hr {
+            height: 3px;
+            margin: 5px 0 0 0;
+        }
 
-button:hover {
-    background-color: rgb(79, 79, 79);
-    cursor: pointer;
-}
+        button:hover {
+            background-color: #016e6e;
+            cursor: pointer;
+            transition: 0.5s;
+        }
 
-/* input:valid {
-    border-bottom: 1px solid rgb(60, 135, 67);
+        .text-field__message {
+            bottom: 310px;
+        }
 
-}
+        input:focus-visible {
+            outline: none;
+            border-bottom: 1px solid rgb(52, 88, 166);
+            box-shadow: 0px 12px 12px -10px rgba(0, 0, 0, 0.358);
 
-input:invalid {
-    border-bottom: 1px solid rgb(164, 79, 79);
+        }
 
-} */
+        form div div div {
+            width: 95%;
+            margin: 10px 0 10px 0;
+        }
 
-.text-field__message {
-    bottom: 310px;
-}
+        form>div {
+            display: flex;
+        }
 
-input:focus-visible {
-    outline: none;
-    border-bottom: 1px solid rgb(52, 88, 166);
-    box-shadow: 0px 12px 12px -10px rgba(0, 0, 0, 0.358);
+        .inpbot {
+            display: flex;
+            width: 100%;
+        }
 
-}
+        .main {
+            margin-left: 20px;
+        }
 
-form>div>div>div {
-    width: 95%;
-    margin: 10px 0 10px 0;
-}
+        .date {
+            width: 50%;
+            margin-left: 15px !important
+        }
 
-form>div {
-    display: flex;
-}
+        .cbox label {
+            flex: 1
+        }
 
-#inpbot {
-    display: flex;
-    width: 100%;
-}
+        @media screen and (min-width: 900px) {
+            input {
+                font-size: 15px
+            }
 
-#main {
-    margin-left: 20px;
-}
+            .text-field__message {
+                bottom: 440px;
+            }
 
-#date {
-    width: 50%;
-    margin-left: 15px !important
-}
-
-.cbox>label {
-    flex: 1
-}
-
-@media screen and (min-width: 900px) {
-    input {
-        font-size: 15px
-    }
-
-    .text-field__message {
-        bottom: 440px;
-    }
-
-    .cbox {
-        margin: 10px 20px 0px 40px;
-    }
+            .cbox {
+                margin: 10px 20px 0px 40px;
+            }
 
 
-}
+        }
 
-@media screen and (max-width: 900px) {
-    #main {
-        flex-direction: column;
-    }
+        @media screen and (max-width: 900px) {
+            .main {
+                flex-direction: column;
+            }
 
-    form>div>div {
-        width: 100%;
-        margin: 10px 0px 10px 0px;
-    }
-}
+            form>div>div {
+                width: 100%;
+                margin: 10px 0px 10px 0px;
+            }
+        }
 
-@media screen and (max-width: 600px) {
-    form>div>div {
-        width: 95%;
-    }
+        @media screen and (max-width: 600px) {
+            form>div>div {
+                width: 95%;
+            }
 
-    .text-field__message {
-        bottom: 182px;
-    }
+            .text-field__message {
+                bottom: 182px;
+            }
 
-    #inpbot>input {
-        height: 40px;
-        margin-bottom: 10px;
-    }
+            .inpbot>input {
+                height: 40px;
+                margin-bottom: 10px;
+            }
 
-    button {
-        width: 35%;
-    }
+            button {
+                width: 35%;
 
-    #inpbot {
-        height: 90px;
-        flex-direction: column
-    }
+            }
 
-    #persd>div {
-        flex-direction: column;
-        display: flex;
-        height: 100px;
+            .inpbot {
+                height: 90px;
+                flex-direction: column
+            }
 
-    }
+            .persd>div {
+                flex-direction: column;
+                display: flex;
+                height: 100px;
 
-    #persd>div>input {
-        width: 100%;
-        height: 40px;
-        margin-bottom: 10px;
-    }
+            }
 
-    #date {
-        margin-left: 0px !important;
-    }
+            .persd>div>input {
+                width: 100%;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            .date {
+                margin-left: 0px !important;
+            }
 
 
-    select {
-        height: 40px;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-}
+            select {
+                height: 40px;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+        }
 
-@media screen and (max-width: 511px) {
-    .text-field__message {
-        bottom: 160px;
-    }
+        @media screen and (max-width: 511px) {
+            .text-field__message {
+                bottom: 160px;
+            }
 
-}
+        }
 
-.text_input_invalid {
-    border-bottom: 1px solid #dc3545 !important;
-}
+        .text_input_invalid {
+            border-bottom: 1px solid #dc3545 !important;
+        }
 
-.text_input_valid {
-    border-bottom: 1px solid #198754 !important;
-}
+        .text_input_valid {
+            border-bottom: 1px solid #198754 !important;
+        }
 
-.text_input_invalid:focus-visible {
-    border-bottom: 1px solid #dc3545 !important;
-}
+        .text_input_invalid:focus-visible {
+            border-bottom: 1px solid #dc3545 !important;
+        }
 
-.text-field__input_valid:focus-visible {
-    border-bottom: 1px solid #198754 !important;
-}
-  </style>
-  <link rel=icon href=/img/channels4_profile.jpg type=image/x-icon>
+        .text-field__input_valid:focus-visible {
+            border-bottom: 1px solid #198754 !important;
+        }
+
+        form {
+            margin: 30px 30px 30px 30px;
+            -webkit-box-shadow: 0px 0px 20px 3px rgba(34, 60, 80, 0.83);
+            -moz-box-shadow: 0px 0px 20px 3px rgba(34, 60, 80, 0.83);
+            box-shadow: 0px 0px 20px 3px rgba(34, 60, 80, 0.83);
+        }
+    </style>
 </head>
 
 <body>
-  <div id="head"><a href="/ind/index.html"></a></div>
-  <hr>
-  <div id="visibl">
-      <p class="page"><a href="../../../index.html">My works</a>/<a href="../../index.html">HTML
-              practice</a>/Адаптивная форма регистрации</p>
-      <form onsubmit="return false;">
-          <div id=main>
-              <div>
-                  <!-- <input type="text" pattern="[0-9]"> -->
-                  <h1>Registration form</h1>
-                  <div class=inp><img src="../img/username.png" alt="ava">
+    <form onsubmit="return false;">
+        <div class=main>
+            <div>
+                <h1>Registration form</h1>
+                <div class=inp><img src="icons/username.png" alt="ava">
 
-                      <input autocomplete=username type="text" required name="username" placeholder=Username
-                          pattern="[0-9A-Za-z]{2,20}">
-                  </div>
-                  <div class=inp><img src="../img/email.png" alt="email">
-                      <input autocomplete=on type="email" required name="Email" placeholder='Email adress'
-                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                  </div>
+                    <input autocomplete=username type="text" required name="username" placeholder=Username
+                        pattern="[0-9A-Za-z]{2,20}">
+                </div>
+                <div class=inp><img src="icons/email.png" alt="email">
+                    <input autocomplete=on type="email" required name="Email" placeholder='Email adress'
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
 
-                  <div class=inp><img src="../img/pswd.png" autocomplete=on alt="pswd">
-                      <div id=inpbot>
-                          <input id=pass type="Password" required name="pswd" placeholder='Password'
-                              autocomplete=new-password>
-                          <input type="Password" id=copass required placeholder='Confirm password'
-                              autocomplete=new-password>
-                      </div>
-                  </div>
+                <div class=inp><img src="icons/pswd.png" autocomplete=on alt="pswd">
+                    <div class=inpbot>
+                        <input class=pass type="Password" required name="pswd" placeholder='Password'
+                            autocomplete=new-password>
+                        <input type="Password" class=copass required placeholder='Confirm password'
+                            autocomplete=new-password>
+                    </div>
+                </div>
 
-              </div>
-              <div id=persd>
-                  <h1>Personal details</h1>
-                  <div><input type="text" required name="fname" autocomplete=given-name placeholder='First name'
-                          pattern="[A-Za-zА-Яа-я]{2,20}">
-                      <input type="text" required name="lname" autocomplete=family-name placeholder='Last name'
-                          pattern="[A-Za-zА-Яа-я]{2,20}">
-                  </div>
-                  <div><select id=gender name="gender">
-                          <option value="m">Male</option>
-                          <option value="f">Female</option>
-                          <option selected disabled>Пол</option>
-                      </select>
-                      <div class="text-field__message"></div>
-                      <input type="date" id=date required autocomplete=bday>
-                  </div>
-              </div>
-          </div>
-          <div class=cbox>
-              <input type="checkbox" id="Want" name="Want">
-              <label for="Want">Я хочу получать новостную рассылку</label>
-          </div>
+            </div>
+            <div class=persd>
+                <h1>Personal details</h1>
+                <div><input type="text" required name="fname" autocomplete=given-name placeholder='First name'
+                        pattern="[A-Za-zА-Яа-я]{2,20}">
+                    <input type="text" required name="lname" autocomplete=family-name placeholder='Last name'
+                        pattern="[A-Za-zА-Яа-я]{2,20}">
+                </div>
+                <div><select class=gender name="gender">
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option selected disabled>Пол</option>
+                    </select>
+                    <div class="text-field__message"></div>
+                    <input type="date" class=date required autocomplete=bday>
+                </div>
+            </div>
+        </div>
+        <div class=cbox>
+            <input type="checkbox" class="Want" name="Want">
+            <label for="Want">I want to receive news and special offers</label>
+        </div>
 
-          <div class=cbox>
-              <input type="checkbox" id="Agree" name="Agree">
-              <label for="Agree">Я согласен с Правилами и Политикой конфиденсальности</label>
-          </div>
-          <hr>
-          <button id=sdub type="submit">Отправить</button>
-      </form>
-      <a class=button href="../../index.html">
-          &#10096; Назад</a>
-      <footer>
-          <div id=center>
-              <ul id=text>
-                  <li>
-                      <a class="caps" href="/ind/index.html">Home & about</a>
-                  </li>
-                  <li>
-                      <a class="caps" href="/contacts/index.html">Contacts</a>
-                  </li>
-                  <li>
-                      <a class="caps" href="/hom/index.html">My works</a>
-                  </li>
-                  <li>
-                      <a class="caps" href="https://blog.lfazliev.com/">Blog</a>
-                  </li>
-              </ul>
-              <ul id=social>
-                  <li>
-                      <a class="fb" href="https://www.facebook.com/lfazliev/"></a>
-                  </li>
-                  <li>
-                      <a class="yt" href="https://www.youtube.com/c/WarLenar"></a>
-                  </li>
-                  <li>
-                      <a class="vk" href="https://vk.ru/lfazliev"></a>
-                  </li>
-              </ul>
-          </div>
-          <hr>
-          <p style="color : white">Fazliev Lenar 2023</p>
-      </footer>
-
-  </div>
-
-
-
-
-
-
-
-
-  <div id=up>
-      &#9757;
-  </div>
-  <script src="script.js"></script>
-  <script src="../../../../script.js"></script>
+        <div class=cbox>
+            <input type="checkbox" class="Agree" name="Agree">
+            <label for="Agree">I agree with the Terms and Conditions</label>
+        </div>
+        <hr>
+        <button class=sdub type="submit">Submit</button>
+    </form>
+    </div>
+    </div>
 </body>
 
 </html>

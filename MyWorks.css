@@ -5,14 +5,12 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-image: url(icons/189d538e3d89f6dcbb4b430d2afb2019.jpeg);
-  background-image: no-repeat;
-  background-size: cover;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.960);
 }
 
 header {
-  background-color: #000000e7;
+  background-color: #000000;
   color: #fff;
   padding: 20px;
 }

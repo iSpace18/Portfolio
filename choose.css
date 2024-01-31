@@ -6,9 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url(icons/1616971143_12-p-temnii-fon-dlya-rabochego-stola-13.jpg);
-  background-image: no-repeat;
-background-size: cover;
+background-color: black;
 }
 
 header {
@@ -46,5 +44,76 @@ section {
   background-color: white;
 }
 h1{
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px;
+}
+.project {
+  margin-bottom: 20px;
+}
+ul { 
+  margin: 150px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+h1{
+  color: white;
+  font: bold 34px/1.4 'Open Sans', arial, sans-serif;
+  padding: 20px;
+  position:relative;
   text-align: center;
 }
