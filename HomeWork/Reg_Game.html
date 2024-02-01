@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Регистрация в онлайновой игре</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+      background: url(icons/dark-hexagonal-background-with-gradient-color_79603-1409.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-    
+
     form {
       width: 400px;
       margin: 0 auto;
+      -webkit-box-shadow: 5px 5px 11px 5px rgba(255, 0, 0, 0.6);
+      -moz-box-shadow: 5px 5px 11px 5px rgba(255, 0, 0, 0.6);
+      box-shadow: 5px 5px 11px 5px rgba(255, 0, 0, 0.6);
+      padding: 30px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
     }
-    
+
     label {
       display: block;
       margin-top: 10px;
     }
-    
-    input[type="text"], input[type="email"], input[type="date"], input[type="number"], select {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    select {
       width: 100%;
       padding: 5px;
       margin-top: 5px;
     }
-    
+
     input[type="submit"] {
       padding: 10px 20px;
       background-color: #4CAF50;
@@ -30,6 +44,12 @@
       border: none;
       cursor: pointer;
       margin-top: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font: bold 34px/1.4 'Open Sans', arial, sans-serif;
     }
   </style>
   <datalist id="country-list">
@@ -44,39 +64,41 @@
     <option value="Япония">
   </datalist>
 </head>
+
 <body>
   <h1>Регистрация в онлайновой игре</h1>
   <form action="submit_registration.php" method="post">
     <label for="nickname">Ник:</label>
     <input type="text" id="nickname" name="nickname" required>
-    
+
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-    
+
     <label for="birthdate">Дата рождения:</label>
     <input type="date" id="birthdate" name="birthdate" required>
-    
+
     <label for="gender">Пол:</label>
     <select id="gender" name="gender" required>
       <option value="Мужской">Мужской</option>
       <option value="Женский">Женский</option>
       <option value="Другой">Другой</option>
     </select>
-    
+
     <label for="country">Страна:</label>
     <input type="text" id="country" name="country" list="country-list" required>
-    
+
     <label for="hero-type">Тип героя:</label>
     <select id="hero-type" name="hero-type" required>
       <option value="Воин">Воин</option>
       <option value="Маг">Маг</option>
       <option value="Лучник">Лучник</option>
     </select>
-    
+
     <label for="years-of-experience">Игровой опыт в годах:</label>
     <input type="number" id="years-of-experience" name="years-of-experience" min="0" max="60" required>
-    
+
     <input type="submit" value="Зарегистрироваться">
   </form>
 </body>
+
 </html>
