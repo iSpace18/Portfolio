@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Заказ суши</title>
+  <style>
+*{
+  margin: 0;
+}
+    body {
+      font-family: Arial, sans-serif;
+      background: url(icons/bg_roll.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    form {
+      width: 400px;
+      margin: 0 auto;
+      -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 39, 131, 0.83);
+      -moz-box-shadow: 0px 0px 20px 3px rgba(0, 39, 131, 0.83);
+      box-shadow: 0px 0px 20px 3px rgba(0, 39, 131, 0.83);
+      padding: 30px;
+      background-color: white;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    img{
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="submit_order.php" method="post">
+    <img src="icons/8f3fc1.jpg" <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="address">Адрес:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="phone">Телефон:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="chopstick-quantity">Количество палочек:</label>
+    <input type="number" id="chopstick-quantity" name="chopstick-quantity" required>
+
+    <label for="chopstick-type">Вид палочек:</label>
+    <select id="chopstick-type" name="chopstick-type" required>
+      <option value="Обычные">японские</option>
+      <option value="Учебные">китайские</option>
+    </select>
+
+    <label for="sushi-selection">Список для выбора суши:</label>
+    <textarea id="sushi-selection" name="sushi-selection" required></textarea>
+
+    <label for="include-napkins">Нужно ли класть салфетки?</label>
+    <input type="checkbox" id="include-napkins" name="include-napkins">
+
+    <label for="comments">Дополнительный комментарий:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <input type="submit" value="Отправить заказ">
+  </form>
+</body>
+
+</html>
