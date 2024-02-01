@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Регистрация в онлайновой игре</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="date"], input[type="number"], select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+  <datalist id="country-list">
+    <option value="Австралия">
+    <option value="Германия">
+    <option value="Испания">
+    <option value="Италия">
+    <option value="Канада">
+    <option value="Россия">
+    <option value="США">
+    <option value="Франция">
+    <option value="Япония">
+  </datalist>
+</head>
+<body>
+  <h1>Регистрация в онлайновой игре</h1>
+  <form action="submit_registration.php" method="post">
+    <label for="nickname">Ник:</label>
+    <input type="text" id="nickname" name="nickname" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="birthdate">Дата рождения:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+    
+    <label for="gender">Пол:</label>
+    <select id="gender" name="gender" required>
+      <option value="Мужской">Мужской</option>
+      <option value="Женский">Женский</option>
+      <option value="Другой">Другой</option>
+    </select>
+    
+    <label for="country">Страна:</label>
+    <input type="text" id="country" name="country" list="country-list" required>
+    
+    <label for="hero-type">Тип героя:</label>
+    <select id="hero-type" name="hero-type" required>
+      <option value="Воин">Воин</option>
+      <option value="Маг">Маг</option>
+      <option value="Лучник">Лучник</option>
+    </select>
+    
+    <label for="years-of-experience">Игровой опыт в годах:</label>
+    <input type="number" id="years-of-experience" name="years-of-experience" min="0" max="60" required>
+    
+    <input type="submit" value="Зарегистрироваться">
+  </form>
+</body>
+</html>
