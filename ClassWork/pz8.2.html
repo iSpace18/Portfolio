@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background: url(icon/1659983200_1-kartinkin-net-p-fon-dlya-stranitsi-saita-krasivo-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    }
+    
+    form {
+      width: 400px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0);
+      padding: 50px;
+      color: white;
+      padding-left: 100px;
+      padding-right: 100px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 11px 10px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 0px 11px 10px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 11px 10px rgba(0, 0, 0, 0.6);
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    
+    textarea {
+      height: 100px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4caf4f00;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 35px;
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      position: relative;
+      margin-left: 100px;
+      -webkit-box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.6);
+-moz-box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.6);
+box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.6);
+    }
+    
+    .phone-input {
+      display: flex;
+    }
+    
+    .phone-input input {
+      flex-grow: 1;
+      margin-right: 5px;
+    }
+    h1{
+      text-align: center
+    }
+  </style>
+</head>
+<body>
+
+  <form action="submit_message.php" method="post">
+    <h1>Contact Form</h1>
+    <label for="name">Имя и фамилия:</label>
+    <div class="name-input">
+      <input type="text" id="first-name" name="first-name" placeholder="Имя" required>
+      <input type="text" id="last-name" name="last-name" placeholder="Фамилия" required>
+    </div>
+    
+    <label for="email">Почтовый адрес:</label>
+    <input type="email" id="email" name="email" placeholder="pochta@mail.ru" required>
+    
+    <label for="phone">Номер телефона:</label>
+    <div class="phone-input">
+      <input type="tel" id="phone1" name="phone1" maxlength="3" placeholder="000" required>
+      <input type="tel" id="phone2" name="phone2" maxlength="3" placeholder="000" required>
+      <input type="tel" id="phone3" name="phone3" maxlength="4" placeholder="0000" required>
+    </div>
+    
+    <label for="subject">Тема сообщения:</label>
+    <select id="subject" name="subject" required>
+      <option value="Общий вопрос">Общий вопрос</option>
+      <option value="Техническая поддержка">Техническая поддержка</option>
+      <option value="Сотрудничество">Сотрудничество</option>
+    </select>
+    
+    <label for="message">Текст сообщения:</label>
+    <textarea id="message" name="message" required></textarea>
+    <hr>
+    <input class="Submit" type="submit" value="Отправить сообщение">
+  </form>
+</body>
+</html>

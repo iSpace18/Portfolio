@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Выбор авиарейса</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font:'Open Sans', arial, sans-serif;
+      background-color: whitesmoke;
+    }
+    
+    header {
+      background-color: #0f4371;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    form {
+      width: 400px;
+      margin: 20px auto;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    input[class="from"],[class="to"],[class="data"],[id="class"],select {
+      width: 150px;
+      padding: 5px;
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #0f4371;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    
+    .filters {
+      width: 400px;
+      margin: 20px auto;
+    }
+    
+    .flight {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .flight .airline {
+      font-weight: bold;
+    }
+    h1{
+      text-align: left;
+      padding-left: 30px;
+    }
+    p{
+      text-align: right;
+    }
+    input.from{
+      margin-left:-700px;
+      background: url(icon/location.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: right;
+    }
+    input.to{
+      background: url(icon/location.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: right;
+    }
+    input.data{
+      background: url(icon/calendar.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: right;
+    }
+    div.filter{
+      background-color: rgb(255, 255, 255);
+      width: 300px;
+      height: 600px;
+      margin-left: 60px;
+      margin-top: 30px;
+
+    }
+    h2{
+      padding: 20px;
+    }
+    h3{
+      color:#0f4371 ;
+      font-size: 15px;
+      padding-left: 35px;
+    }
+    div.margin-filter{
+      padding-left: 35px;
+    }
+    .price-input {
+      display: inline-block;
+      margin-left: 50px;
+      align-items: center;
+      width: 50px;
+    }
+    
+    .price-input label {
+      margin-right: 5px;
+    }
+    
+    .price-input input[type="text"] {
+      flex-grow: 1;
+      padding: 5px;
+      margin-top: 5px;
+      width: 60px;
+      height: 27px;
+    }
+    div.filter{
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 5px 3px rgba(193, 193, 193, 0.6);
+-moz-box-shadow: 0px 0px 5px 3px rgba(193, 193, 193, 0.6);
+box-shadow: 0px 0px 5px 3px rgba(193, 193, 193, 0.6);
+    }
+    p{
+      color: rgba(255, 255, 255, 0.626);
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1 >Flights - Search List</h1>
+    <p>Home/Hights Search list</p>
+  </header>
+  
+  <form>
+    <input class="from" type="text" id="departure" name="departure" placeholder="From">
+    
+    <input class="to" type="text" id="arrival" name="arrival"placeholder="To">
+    
+    <input class="data" type="text" id="departure-date" name="departure-date" placeholder="Departure Date">
+    
+    <input class="data" type="text" id="departure-date" name="departure-date" placeholder="Return Date">
+    <select id="class" name="class">
+      <option value="Эконом">Эконом</option>
+      <option value="Бизнес">Бизнес</option>
+      <option value="Первый">Первый</option>
+    </select>
+    <input type="submit" value="Search">
+  </form>
+  <div class="filter">
+    <h2 >Filter</h2>
+    <h3>No. of Stops</h3>
+    <div class="margin-filter">
+    <label>
+      <input type="checkbox" id="non-stop" name="stops" value="non-stop">
+      Non Stop
+    </label>
+    
+    <label>
+      <input type="checkbox" id="one-stop" name="stops" value="one-stop">
+      1 Stop
+    </label>
+    
+    <label>
+      <input type="checkbox" id="two-plus-stops" name="stops" value="two-plus-stops">
+      2+ Stops
+    </label>
+  </div>
+  <h3 style="margin-top: 20px;">Price</h3>
+  <div class="price-input">
+    <label for="min-price">min:</label>
+    <input type="text" id="min-price" placeholder="0" name="min-price">
+  </div>
+  
+  <div class="price-input">
+    <label for="max-price">max:</label>
+    <input type="text" id="max-price" placeholder="1000" name="max-price">
+  </div>
+  <h3 style="margin-top: 20px;">Airlines</h3>
+  <div class="margin-filter">
+  <label>
+    <input type="checkbox" id="non-stop" name="stops" value="non-stop">
+    Asiana Airlines
+  </label>
+  
+  <label>
+    <input type="checkbox" id="one-stop" name="stops" value="one-stop">
+    American Airlines
+  </label>
+  
+  <label>
+    <input type="checkbox" id="two-plus-stops" name="stops" value="two-plus-stops">
+    Air Canada
+  </label>
+  <label>
+    <input type="checkbox" id="non-stop" name="stops" value="non-stop">
+    Air India
+  </label>
+  
+  <label>
+    <input type="checkbox" id="one-stop" name="stops" value="one-stop">
+    Jet Airways
+  </label>
+  
+  <label>
+    <input type="checkbox" id="two-plus-stops" name="stops" value="two-plus-stops">
+    Spicejet
+  </label>
+  <label>
+    <input type="checkbox" id="two-plus-stops" name="stops" value="two-plus-stops">
+    IncilGo
+  </label>
+  <label>
+    <input type="checkbox" id="two-plus-stops" name="stops" value="two-plus-stops">
+    Multiple Airlines
+  </label>
+  </div>
+</body>
+</html>
