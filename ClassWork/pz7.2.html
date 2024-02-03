@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вкладки</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      font-size: 20px;
+    }
+
+    .content {
+      display: flex;
+      background-color: #363636;
+      padding: 30px;
+      color: white;
+      gap: 40px;
+    }
+
+    .tab {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 30px 0;
+      background-color: gray;
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      transition: 0.5s ease;
+    }
+
+    a:hover {
+      background-color: #5a5a5a;
+      transition: 0.3s ease;
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      gap: 20px;
+      text-align: justify;
+    }
+
+    img {
+      max-width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="tab">
+      <a href="#">Tab 1</a>
+      <a href="#">Tab 2</a>
+      <a href="#">Tab 3</a>
+    </aside>
+    <aside class="content">
+      <div class="block">
+        <img src="icon/350x220.png" alt="#">
+        <h1>Header 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque auctor volutpat. Integer consequat massa ut est condimentum, quis eleifend nunc ultricies. Praesent congue varius maximus.</p>
+      </div>
+      <div class="block">
+        <img src="icon/350x220.png" alt="#">
+        <h1>Header 2</h1>
+        <p>Nulla vel felis tortor. Fusce risus est, tincidunt sit amet ullamcorper eu, sollicitudin vitae sem. Pellentesque non lorem scelerisque, tempus lacus quis, ullamcorper nisi. Pellentesque velit diam, molestie eget eros nec, fermentum ullamcorper lectus. Quisque elementum ligula non semper bibendum. Maecenas a mattis erat. Nunc sollicitudin non justo non mattis. Ut porta vel magna nec cursus. Vestibulum at lacinia ex, eu ullamcorper diam. Cras a nulla et nisl egestas auctor.</p>
+      </div>
+      <div class="block">
+        <img src="icon/350x220.png" alt="#">
+        <h1>Header 3</h1>
+        <p>Fusce commodo ornare ex, quis tincidunt nulla. Aliquam a finibus neque, at mattis quam. Donec sed sapien ipsum. Duis nibh ipsum, congue suscipit ante vel, interdum molestie nibh. Aliquam eu sem eu dui sollicitudin vehicula. Aenean purus turpis, sodales a fringilla vitae, dignissim a nulla.</p>
+      </div>
+    </aside>
+  </div>
+</body>
+
+</html>
