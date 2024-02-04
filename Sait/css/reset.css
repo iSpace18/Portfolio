@@ -11,16 +11,6 @@
 	box-sizing: border-box;
 }
 
-:focus,
-:active {
-	/*outline: none;*/
-}
-
-a:focus,
-a:active {
-	/* outline: none;*/
-}
-
 /* Links */
 
 a, a:link, a:visited  {
