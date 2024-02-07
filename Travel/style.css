@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  /* box-shadow: 0 0 10px red inset  */
 }
 body {
   background-color: #c5c5c5;
   height: 2500px;
     max-width: 2000px;
-}
+    
+  }
 html{
   scroll-behavior: smooth
 }
@@ -21,7 +23,7 @@ header {
 }
 h1 {
   color: #689985;
-  width: 371px;
+  width: 401px;
   position: relative;
   height: 54px;
   top: 31px;
@@ -255,8 +257,8 @@ position: relative;
 .telephone{
 width: 926px;
 height: 696px;
-top: -900px;
-left: 570px;
+top: -711px;
+left: 737px;
 position: relative;
 
 }
