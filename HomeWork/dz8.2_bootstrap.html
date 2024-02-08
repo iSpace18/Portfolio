@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мини-библиотека стилей для элементов ввода данных</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .input-untouched {
+        border: 1px solid #ced4da;
+      }
+
+      .input-valid {
+        border: 1px solid #28a745;
+      }
+
+      .input-invalid {
+        border: 1px solid #dc3545;
+      }
+
+      .checkbox-checked {
+        background-color: #28a745;
+      }
+
+      .checkbox-unchecked {
+        background-color: #dc3545;
+      }
+
+      .radio-checked {
+        background-color: #28a745;
+      }
+
+      .radio-unchecked {
+        background-color: #dc3545;
+      }
+
+      .btn-regular {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      .btn-hover {
+        background-color: #0056b3;
+        color: #fff;
+      }
+
+      .btn-disabled {
+        background-color: #6c757d;
+        color: #fff;
+      }
+
+      .btn-round {
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      .textarea {
+        border: 1px solid #ced4da;
+      }
+      .button-round.button-round-green{
+        background-color: green;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border:none;
+        transition: 0.5s ease;
+      }
+      .button-round.button-round-green:hover{
+        background-color: rgb(16, 110, 16);
+        transition: 0.5s ease;
+      }
+      .button-round.button-round-red{
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border:none;
+      }
+      .button-round.button-round-red:hover{
+        background-color: rgb(204, 6, 6);
+        transition: 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Мини-библиотека стилей для элементов ввода данных</h1>
+
+      <h2>Input</h2>
+      <input
+        type="text"
+        class="form-control input-untouched"
+        placeholder="Input в нетронутом состоянии"
+      />
+      <input
+        type="text"
+        class="form-control input-valid"
+        placeholder="Input с корректными данными"
+      />
+      <input
+        type="text"
+        class="form-control input-invalid"
+        placeholder="Input с некорректными данными"
+      />
+
+      <h2>Checkbox</h2>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox-checked"
+          type="checkbox"
+          value=""
+          checked
+        />
+        <label class="form-check-label">Checkbox в состоянии включен</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input checkbox-unchecked"
+          type="checkbox"
+          value=""
+        />
+        <label class="form-check-label">Checkbox в состоянии выключен</label>
+      </div>
+
+      <h2>Radio Button</h2>
+      <div class="form-check">
+        <input
+          class="form-check-input radio-checked"
+          type="radio"
+          name="exampleRadios"
+          id="radio1"
+          value="option1"
+          checked
+        />
+        <label class="form-check-label" for="radio1"
+          >Radio Button в состоянии включен</label
+        >
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input radio-unchecked"
+          type="radio"
+          name="exampleRadios"
+          id="radio2"
+          value="option2"
+        />
+        <label class="form-check-label" for="radio2"
+          >Radio Button в состоянии выключен</label
+        >
+      </div>
+
+      <h2>Button</h2>
+      <button type="button" class="btn btn-regular">Обычная кнопка</button>
+      <button type="button" class="btn btn-hover">
+        Кнопка при наведении мышкой
+      </button>
+      <button type="button" class="btn btn-disabled" disabled>
+        Неактивная кнопка
+      </button>
+      <!-- <button type="button" class="btn btn-round btn-success">
+        <i class="fas fa-check">+</i>
+      </button>
+      <button type="button" class="btn btn-round btn-danger">
+        <i class="fas fa-times">-</i>
+      </button> -->
+      <button class="button-round button-round-green">+</button>
+      <button class="button-round button-round-red">-</button>
+      <h2>Textarea</h2>
+      <textarea class="form-control textarea" placeholder="Textarea"></textarea>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
