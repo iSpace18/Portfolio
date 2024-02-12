@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-shadow: 0 0 10px red inset  */
+}
+body {
+  background-color: #c5c5c5;
+  height: 2500px;
+    max-width: 2000px;
+    
+  }
+html{
+  scroll-behavior: smooth
+}
+header {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 1738px;
+  height: 158px;
+  left: 91px;
+  top: 48px;
+  border-radius: 20px;
+}
+h1 {
+  color: #689985;
+  width: 401px;
+  position: relative;
+  height: 54px;
+  top: 31px;
+  left: 38px;
+  font-family: TT Travels;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header_p {
+  width: 490px;
+  height: 36px;
+  top: 30px;
+  left: 38px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  font-family: Inter;
+}
+@font-face {
+  font-family: TT Travels;
+  src: url(Font/TTTravels-Bold.ttf);
+}
+nav {
+  position: relative;
+  width: 642px;
+  height: 31px;
+  top: -20px;
+  left: 1072px;
+}
+a {
+  text-decoration: none;
+  margin-left: 100px;
+  color: black;
+  font-family: TTTravels-Regular;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@font-face {
+  font-family: TTTravels-Regular;
+  src: url(Font/TTTravels-Regular.ttf);
+}
+div.content {
+  position: relative;
+  width: 1738px;
+  height: 577px;
+  top: 151px;
+  left: 91px;
+  border-radius: 20px;
+  background: linear-gradient(
+    251.87deg,
+    #ffffff 47.44%,
+    #709d8b 47.71%,
+    #487361 100%
+  );
+}
+
+.content_text {
+  font-family: gothampro;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 692px;
+  height: 228px;
+  top: 60px;
+  left: 52px;
+  position: relative;
+  color: white;
+}
+@font-face {
+  font-family: gothampro;
+  src: url(Font/gothampro.ttf);
+}
+.logo {
+  width: 203px;
+  height: 202px;
+  top: 167px;
+  left: 404px;
+  position: relative;
+}
+div.Right_side {
+  position: relative;
+  width: 908px;
+  height: 577px;
+  left: 830px;
+  top: -200px;
+}
+.vector {
+  width: 203px;
+  height: 202px;
+  top: 100px;
+  left: 404px;
+  position: relative;
+}
+h2 {
+  width: 880px;
+  height: 48px;
+  top: 52px;
+  left: 67px;
+  font-family: gothampro;
+  position: relative;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Download {
+  position: relative;
+  width: 527.65px;
+  height: 59.65px;
+  top: 196px;
+  left: 333px;
+  padding: 0px, 0px, 0px, 0px;
+}
+.down {
+  width: 59px;
+  height: 35px;
+  top: -230px;
+  left: 650px;
+  position: relative;
+
+}
+.googleplay {
+  position: relative;
+  width: 217.34px;
+  height: 59.65px;
+  top: 215px;
+  left: 543.31px;
+}
+.appstore {
+  width: 217.34px;
+  height: 59.65px;
+  top: 215px;
+  right: 100px;
+  position: relative;
+}
+div.content_2 {
+  margin-top: -210px;
+  width: 1738px;
+  height: 813px;
+  top: 75px;
+  left: 1px;
+  border-radius: 20px;
+  background: linear-gradient(
+    103.99deg,
+    #ffffff 47.8%,
+    #6d9b88 47.81%,
+    #709d8a 51.49%,
+    #4c7665 92.09%
+  );
+  position: relative;
+}
+
+div.texts{
+  width: 772px;
+  height: 301px;
+  top: 71px;
+  left: 24px;
+  position: relative;
+}
+.text_1{
+  width: 135px;
+height: 54px;
+top: 71px;
+left: 24px;
+font-family: TTTravels-Regular;
+font-size: 45px;
+font-weight: 500;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: left;
+position: relative;
+}
+.text_2{
+  width: 758px;
+  height: 108px;
+  top: 147px;
+  left: 24px;
+  position: relative;
+  font-family: TTTravels-Regular;
+font-size: 30px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.text_3{
+  width: 762px;
+height: 72px;
+top: 200px;
+left: 24px;
+font-family: TTTravels-Regular;
+font-size: 30px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+position: relative;
+
+
+}
+.vk{
+  width: 119px;
+height: 119px;
+top: 277px;
+left: 92px;
+position: relative;
+
+}
+.down2 {
+  width: 59px;
+  height: 35px;
+  top: 150px;
+  left: 850px;
+  position: relative;
+}
+.telephone{
+width: 926px;
+height: 696px;
+top: -711px;
+left: 737px;
+position: relative;
+
+}

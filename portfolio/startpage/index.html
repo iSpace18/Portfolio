@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title>Starbucks Landing Page</title>
+  <link rel="stylesheet" href="style_menu.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="btn-up btn-up_hide"></div>
+  <header>
+    <div class="left-side">
+      <a href="#"> <img src="img/logo.png" alt="" /> </a>
+    </div>
+    <div class="right-side">
+      <div class="nav-link-wrapper"><a href="">Home</a></div>
+      <div class="nav-link-wrapper"><a href="#Menu">Menu
+        </a></div>
+      <div class="nav-link-wrapper"><a href="#New">What's New</a></div>
+      <div class="nav-link-wrapper"><a href="#Footer">Contact</a></div>
+      <script src="script.js"></script>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="left-side">
+      <h1>
+        It's not just Coffee <br />
+        It's <span class="green"> Starbucks </span>
+      </h1>
+      <p>
+        Welcome to Starbucks, where every sip is a journey through the world
+        of exceptional coffee. Immerse yourself in the rich aroma and bold
+        flavors that define our carefully curated selection of ethically
+        sourced, premium coffees.
+      </p>
+      <a href="https://www.starbucks.com/">Learn More</a>
+    </div>
+    <div class="right-side">
+      <img src="img/img1.png" alt="" class="starbucks" />
+      <div class="box">
+        <a href="https://www.youtube.com/channel/UCj4nCgtjKJppK_IZeY8TUJg?ysclid=lrtdhvyoqv202374257" target="_blank">
+          <img url class="facebook" src="img/pngwing.com (5).png" alt="" /></a>
+        <a href="#"> <img src="img/instagram.png" alt="" /></a>
+        <a href="#"> <img src="img/twitter.png" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="thumb">
+    <a href="#bottom"><img src="img/thumb1.png" onclick=" changeBackground('color1');"
+        onclick="imgSlider('img/img1.png');" />
+    </a>
+    <a href="#bottom"><img src="img/thumb2.png" onclick="changeBackground('color2');"
+        onclick="imgSlider('img/img2.png');" />
+    </a>
+    <a href="#bottom"><img src="img/thumb3.png" onclick="changeBackground('color3');"
+        onclick="imgSlider('img/img3.png');" />
+    </a>
+
+  </div>
+
+
+    <div style="margin-top: 300px;" class="container">
+      <div class="left-side">
+        <h1 id="Menu">
+          Menu
+        </h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img/img2.png" />
+          </div>
+          <div class="details">
+            <h3>Pink Coffee<br /><span>Starbucks</span></h3>
+            <h4>Size</h4>
+            <ul class="size">
+              <li>0.3</li>
+              <li>0.5</li>
+              <li>0.75</li>
+            </ul>
+            <div class="group">
+              <h2>$9<small>.99</small></h2>
+              <a style="background-color: black;" class="buy" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card">
+            <div class="imgBx">
+              <img src="img/img1.png" />
+            </div>
+            <div class="details">
+              <h3>Green Coffee<br /><span>Starbucks</span></h3>
+
+              <h4>Size</h4>
+              <ul class="size">
+                <li>0.3</li>
+                <li>0.5</li>
+                <li>0.75</li>
+              </ul>
+              <div class="group">
+                <h2>$9<small>.99</small></h2>
+                <a style="background-color: black;" class="buy" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card3">
+          <div class="card">
+            <div class="imgBx">
+              <img src="img/img3.png" />
+            </div>
+            <div class="details">
+              <h3>Purple Coffee<br /><span>Starbucks</span></h3>
+
+              <h4>Size</h4>
+              <ul class="size">
+                <li>0.3</li>
+                <li>0.5</li>
+                <li>0.75</li>
+              </ul>
+              <div class="group">
+                <h2>$9<small>.99</small></h2>
+                <a style="background-color: black;" class="buy" href="#">Buy Now</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      <div style="position: relative; display: flex;top: -300px;">
+        <h1 id="New" style="display: flex; position: relative;max-height: 150px;">What's New</h1>
+        <img class="starbucks" src="img/starbucks.jpg" alt="">
+        <h2 class="info" style="max-height: 150px;" >Когда новые Starbucks откроются в России</h2>
+        <hr style="transform: rotate(180deg); position: relative; display: flex;height: 150px;top: 220px;left: -330px;">
+        <p class="sinfo" >До закрытия у Starbucks было 130 точек на территории РФ. Презентация первой кофейни после
+          ребрендинга состоялась 18 августа. Свои двери в 16:00 открыла точка на Новом Арбате. Еще 10 возобновят работу
+          в период с 22 по 28 августа, а все точки — до конца сентября. Помимо прежних помещений бизнесмены намерены
+          открывать дополнительные кофейни, всего около 200 заведений.</p>
+
+      </div>
+      <br>
+
+      <hr style="position: relative;top: -30px; " id="Footer">
+      <footer>
+        <div class="flex">
+          <div style="position: relative;max-height: 450px;">
+            <h3 style="position: relative;left: 100px;">About Us<br><br>
+              <sup>Our Company</sup>
+              <br>
+              <sup>Our Coffee</sup>
+              <br>
+              <sup>Stories and News</sup>
+              <br>
+              <sup>Starbucks Archive</sup>
+              <br>
+              <sup>Investor Relations</sup>
+              <br>
+              <sup>Customer Service</sup>
+              <br>
+              <sup>Contact Us</sup>
+
+            </h3>
+            <h3 style="top: -230px;position: relative;left: 400px;">Careers
+              <br>
+              <br>
+              <sup> Culture and Values</sup>
+              <br>
+              <sup>Inclusion, Diversity, and Equity</sup>
+              <br>
+              <sup>College Achievement Plan</sup>
+              <br>
+              <sup>Alumni Community</sup>
+              <br>
+              <sup>U.S. Careers</sup>
+              <br>
+              <sup>Customer Service</sup>
+              <br>
+              <sup>International Careers</sup>
+            </h3>
+            <h3 style="top: -455px;position: relative;left: 700px;">Social impact
+              <br>
+              <br>
+              <sup>People</sup>
+              <br>
+              <sup>Planet</sup>
+              <br>
+              <sup>Environmental and Social</sup><br> <sup>Impact Reporting</sup>
+            </h3>
+            <h3 style="top: -603px;position: relative;left: 1000px;">For Business Partners
+              <br>
+              <br>
+              <sup>Landlord Support Center</sup>
+              <br>
+              <sup>Suppliers</sup>
+              <br>
+              <sup>Corporate Gift Card Sales</sup>
+              <br>
+              <sup>Office and Foodservice Coffee</sup>
+            </h3>
+            <h3 style="top: -750px;position: relative;left: 1400px;">Order and Pick Up
+              <br>
+              <br>
+              <sup> Order on the App</sup>
+              <br>
+              <sup>Order on the Web</sup>
+              <br>
+              <sup>Delivery</sup>
+              <br>
+              <sup>Order and Pick Up Options</sup>
+              <br>
+              <sup>Explore and Find Coffee for Home</sup>
+            </h3>
+            <div style="position: relative;top: -500px;">>
+              <sup>© 2024 Starbucks Coffee Company. All rights reserved.</sup>
+              <br>
+              <sup>Created by David Shnazaryan</sup>
+            </div>
+          </div>
+
+      </footer>
+    </div>
+</body>
+
+</html>
