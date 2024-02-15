@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div_hover</title>
+    <style>
+
+        div{
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background: -webkit-linear-gradient(135deg, rgb(255, 0, 0), rgb(0, 0, 0));
+background: -moz-linear-gradient(135deg, rgb(255, 0, 0), rgb(0, 0, 0));
+background: linear-gradient(135deg, rgb(255, 0, 0), rgb(0, 0, 0));
+            text-align: center;
+            transition: all 2s ease-out;
+            border-radius:10px;
+            
+
+        }
+        div:hover{
+            transition: all 2s ease-in-out;
+            border-radius: 50%;
+            webkit-box-shadow: 0px 0px 15px 6px rgba(255, 0, 0, 1);
+-moz-box-shadow: 0px 0px 15px 6px rgba(255, 0, 0, 1);
+box-shadow: 0px 0px 15px 6px rgba(255, 0, 0, 1);
+
+
+        }
+        h1{
+            text-align: center;
+            padding-top: 120px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+<h1>Hello World</h1>
+
+
+
+    </div>
+</body>
+</html>
